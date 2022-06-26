@@ -1,5 +1,6 @@
 import projectKatakana from 'assets/katakana-project.svg?url';
 import { Button } from 'components/Button';
+import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Heading } from 'components/Heading';
 import { deviceModels } from 'components/Model/deviceModels';
@@ -12,6 +13,7 @@ import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { cssProps, media } from 'utils/style';
 import styles from './ProjectSummary.module.css';
+import Link from 'next/link';
 
 const Model = dynamic(() => import('components/Model').then(mod => mod.Model));
 
@@ -23,9 +25,8 @@ export const ProjectSummary = ({
   title,
   description,
   model,
-  buttonText,
-  buttonLink,
   alternate,
+  color,
   ...rest
 }) => {
   const [focused, setFocused] = useState(false);
@@ -62,8 +63,9 @@ export const ProjectSummary = ({
           notchHeight="8px"
           collapsed={!visible}
           collapseDelay={1000}
+          color={color}
         />
-        <span className={styles.indexNumber} data-visible={visible}>
+        <span className={styles.indexNumber} data-visible={visible} style={{color: color}}>
           {indexText}
         </span>
       </div>
@@ -73,17 +75,18 @@ export const ProjectSummary = ({
         className={styles.title}
         data-visible={visible}
         id={titleId}
+        style={{textTransform: "uppercase", letterSpacing: "0.3em"}}
       >
-        {title}
+        <DecoderText text={title} delay={1000} start={sectionVisible || focused} />
       </Heading>
       <Text className={styles.description} data-visible={visible} as="p">
         {description}
       </Text>
-      <div className={styles.button} data-visible={visible}>
+      {/* <div className={styles.button} data-visible={visible}>
         <Button iconHoverShift href={buttonLink} iconEnd="arrowRight">
           {buttonText}
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 
@@ -92,7 +95,7 @@ export const ProjectSummary = ({
       {model.type === 'laptop' && (
         <>
           {renderKatakana('laptop', visible)}
-          <div className={styles.model} data-device="laptop">
+          <div className={`${styles.model} model-link`} data-device="laptop">
             <Model
               alt={model.alt}
               cameraPosition={{ x: 0, y: 0, z: 8 }}

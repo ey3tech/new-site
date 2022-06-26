@@ -175,4 +175,5 @@ export const fontStyles = squish(`
     font-display: block;
     font-style: italic;
   }
+
 `);

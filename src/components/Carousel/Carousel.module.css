@@ -84,7 +84,7 @@
   & svg {
     position: relative;
     left: var(--offset);
-    fill: rgb(var(--rgbWhite));
+    /* fill: rgb(var(--rgbWhite)); */
   }
 
   @media (--mediaMobile) {

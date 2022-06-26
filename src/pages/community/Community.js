@@ -3,7 +3,7 @@ import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png'
 import sliceAnnotation from 'assets/slice-annotation.png';
 import sliceAppLarge from 'assets/slice-app-large.jpg';
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceApp from 'assets/slice-app.jpg';
+import tbjr from 'assets/community-tbjr.jpg';
 import sliceBackgroundBarLarge from 'assets/slice-background-bar-large.jpg';
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
 import sliceBackgroundBar from 'assets/slice-background-bar.jpg';
@@ -38,14 +38,14 @@ import {
 } from 'layouts/Project';
 import { Fragment } from 'react';
 import { media } from 'utils/style';
-import styles from './Slice.module.css';
+import styles from './Community.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'Community Outreach';
 const description =
-  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
-const roles = ['User Research', 'UX Design', 'Interface Design'];
+  'We 💖 the community, and have worked closely with numerous programs such as the PGC Keys as well as opening our own mentoring and internship programs to help young people get jobs in cyber.';
+const roles = ['User Research', 'Mentorship', 'Interface Design'];
 
-export const Slice = () => {
+export const Community = () => {
   return (
     <Fragment>
       <Meta title={title} prefix="Projects" description={description} />
@@ -65,7 +65,7 @@ export const Slice = () => {
         <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
-              srcSet={[sliceApp, sliceAppLarge]}
+              srcSet={[tbjr, tbjr]}
               placeholder={sliceAppPlaceholder}
               alt="The Slice web application showing a selected user annotation."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
@@ -77,14 +77,14 @@ export const Slice = () => {
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
               <ProjectSectionText>
-                Teachers needed a better way to create collaborative group activities by
-                annotating slides on Slice. Before starting this project, a layer could
-                only be annotated by a single user, making it difficult for learners to
-                work together.
+                One of our interns, Cole Harriston, now has a Professsional Scrum Master
+                Certification. Here&apos;s what he had to say about it:
               </ProjectSectionText>
-              <ProjectSectionText>
-                Our solution was to allow users to be invited to a layer, where they can
-                see others’ annotations and make their own.
+              <ProjectSectionText style={{fontStyle: "italic"}}>
+                "Great way to end the day by getting my Professional Scrum Master I
+                Certificate! I've enjoyed my time working with everyone involved in my
+                internship at Ey3 Technologies and I appreciate all the support!
+                #internship #scrum"
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>

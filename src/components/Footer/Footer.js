@@ -7,10 +7,15 @@ export const Footer = ({ className }) => (
   <footer className={classes(styles.footer, className)}>
     <Text size="s" align="center">
       <span className={styles.date}>
-        {`© ${new Date().getFullYear()} Hamish Williams.`}
+        {`© ${new Date().getFullYear()} Ey3 Technologies.`}
       </span>
-      <Link secondary className={styles.link} href="/humans.txt" target="_self">
-        Crafted by yours truly
+      created by{' '}
+      <Link style={{ color: '#5966f3' }} href="https://terabyteis.me">
+        thrzl
+      </Link>
+      . Heavily inspired by{' '}
+      <Link secondary className={styles.link} href="https://hamishw.com" target="_self">
+        Hamish Williams
       </Link>
     </Text>
   </footer>

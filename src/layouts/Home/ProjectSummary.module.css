@@ -142,7 +142,8 @@
 .svg {
   opacity: 0;
   transition: opacity 1200ms ease 1400ms;
-  fill: var(--colorTextTitle);
+  stroke: var(--colorTextTitle);
+  /* fill: rgba(0, 0, 0, 0) */
 
   &[data-visible='true'] {
     opacity: var(--opacity);
@@ -266,3 +267,6 @@
     opacity: 1;
   }
 }
+
+.model-link { transition: all .2s ease-in-out; }
+.model-link:hover { transform: scale(1.5); }

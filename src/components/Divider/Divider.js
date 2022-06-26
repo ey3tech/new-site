@@ -10,6 +10,7 @@ export const Divider = ({
   collapsed,
   className,
   style,
+  color,
   ...rest
 }) => (
   <div
@@ -26,11 +27,18 @@ export const Divider = ({
     )}
     {...rest}
   >
-    <div className={styles.line} data-collapsed={collapsed} />
+    <div
+      className={styles.line}
+      data-collapsed={collapsed}
+      style={{ backgroundColor: color }}
+    />
     <div
       className={styles.notch}
       data-collapsed={collapsed}
-      style={cssProps({ collapseDelay: numToMs(collapseDelay + 160) })}
+      style={cssProps(
+        { collapseDelay: numToMs(collapseDelay + 160) },
+        { backgroundColor: color }
+      )}
     />
   </div>
 );

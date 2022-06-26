@@ -17,8 +17,8 @@ import styles from './Profile.module.css';
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
-    <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+    <Heading className={styles.title} data-visible={visible} level={3} id={titleId} style={{letterSpacing: "0.3em", textTransform: "uppercase"}}>
+      <DecoderText text="Community" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
@@ -26,11 +26,6 @@ const ProfileText = ({ visible, titleId }) => (
       animations, and icon illustration. Being comfortable with code allows me to rapidly
       prototype and validate experiences. If you’re interested in the tools and software I
       use check out my <Link href="/uses">uses page</Link>.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
     </Text>
   </Fragment>
 );
@@ -55,15 +50,11 @@ export const Profile = ({ id, visible, sectionRef }) => {
           <div className={styles.content}>
             <div className={styles.column}>
               <ProfileText visible={visible} titleId={titleId} />
-              <Button
-                secondary
-                className={styles.button}
-                data-visible={visible}
-                href="/contact"
-                icon="send"
-              >
-                Send me a message
-              </Button>
+              <div className={styles.button} data-visible={visible}>
+                <Button iconHoverShift href="community" iconEnd="arrowRight">
+                  More Info
+                </Button>
+              </div>
             </div>
             <div className={styles.column}>
               <div className={styles.tag} aria-hidden>
@@ -74,7 +65,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   collapseDelay={1000}
                 />
                 <div className={styles.tagText} data-visible={visible}>
-                  About Me
+                  <DecoderText text="///" start={visible} delay={500} />
                 </div>
               </div>
               <div className={styles.image}>

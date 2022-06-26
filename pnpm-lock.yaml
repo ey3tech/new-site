@@ -13,7 +13,6 @@ specifiers:
   esbuild: ^0.14.38
   eslint: ^8.15.0
   eslint-config-next: ^12.1.6
-  fathom-client: ^3.4.1
   framer-motion: ^6.3.3
   fs-extra: ^10.1.0
   globby: ^13.1.1
@@ -41,7 +40,6 @@ specifiers:
   three-stdlib: ^2.10.1
 
 dependencies:
-  fathom-client: 3.5.0
   framer-motion: 6.3.15_biqbaboplfbrettd7655fr4n2y
   mdx-bundler: 9.0.1_esbuild@0.14.47
   next: 12.1.6_biqbaboplfbrettd7655fr4n2y
@@ -5055,7 +5053,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1
+      promise-inflight: 1.0.1_bluebird@3.7.2
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -7336,10 +7334,6 @@ packages:
     dependencies:
       reusify: 1.0.4
     dev: true
-
-  /fathom-client/3.5.0:
-    resolution: {integrity: sha512-BiRDS9Q9a8Zma0H717FWC5cvf545K/CsxBpxKT22TcSl1EbRhhlHWIJgrdeiQUfdorBK2ppy09TwMOhRsbos/A==}
-    dev: false
 
   /fault/1.0.4:
     resolution: {integrity: sha512-CJ0HCB5tL5fYTEA7ToAq5+kTwd++Borf1/bifxd9iT70QcXr4MRrO3Llf8Ifs70q+SJcGHFtnIE/Nw6giCtECA==}
@@ -12187,6 +12181,17 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
+    dev: true
+
+  /promise-inflight/1.0.1_bluebird@3.7.2:
+    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
+    peerDependencies:
+      bluebird: '*'
+    peerDependenciesMeta:
+      bluebird:
+        optional: true
+    dependencies:
+      bluebird: 3.7.2
     dev: true
 
   /promise.allsettled/1.0.5:

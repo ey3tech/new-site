@@ -1,7 +1,6 @@
 import sliceAnnotationLarge from 'assets/slice-annotation-large.png';
 import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png';
 import sliceAnnotation from 'assets/slice-annotation.png';
-import sliceAppLarge from 'assets/slice-app-large.jpg';
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
 import tbjr from 'assets/community-tbjr.jpg';
 import sliceBackgroundBarLarge from 'assets/slice-background-bar-large.jpg';
@@ -80,11 +79,11 @@ export const Community = () => {
                 One of our interns, Cole Harriston, now has a Professsional Scrum Master
                 Certification. Here&apos;s what he had to say about it:
               </ProjectSectionText>
-              <ProjectSectionText style={{fontStyle: "italic"}}>
-                "Great way to end the day by getting my Professional Scrum Master I
-                Certificate! I've enjoyed my time working with everyone involved in my
+              <ProjectSectionText style={{ fontStyle: 'italic' }}>
+                &quot;Great way to end the day by getting my Professional Scrum Master I
+                Certificate! I&apos;ve enjoyed my time working with everyone involved in my
                 internship at Ey3 Technologies and I appreciate all the support!
-                #internship #scrum"
+                #internship #scrum&quot;
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>

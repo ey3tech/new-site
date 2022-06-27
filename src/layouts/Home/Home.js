@@ -19,10 +19,10 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
-  const details = useRef();
+  const community = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, community];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -133,9 +133,9 @@ export const Home = () => {
         color="#c02b30"
       />
       <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
+        sectionRef={community}
+        visible={visibleSections.includes(community.current)}
+        id="community"
       />
       <Footer />
     </div>

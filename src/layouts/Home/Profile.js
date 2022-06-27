@@ -1,13 +1,12 @@
 import profileKatakana from 'assets/katakana-profile.svg?url';
-import profileImgLarge from 'assets/profile-large.jpg';
-import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
-import profileImg from 'assets/profile.jpg';
+import profileImgLarge from 'assets/index-community.png';
+import profileImgPlaceholder from 'assets/index-community.png';
+import profileImg from 'assets/index-community.png';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Heading } from 'components/Heading';
 import { Image } from 'components/Image';
-import { Link } from 'components/Link';
 import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { Transition } from 'components/Transition';
@@ -17,15 +16,25 @@ import styles from './Profile.module.css';
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
-    <Heading className={styles.title} data-visible={visible} level={3} id={titleId} style={{letterSpacing: "0.3em", textTransform: "uppercase"}}>
+    <Heading
+      className={styles.title}
+      data-visible={visible}
+      level={3}
+      id={titleId}
+      style={{ letterSpacing: '0.3em', textTransform: 'uppercase' }}
+    >
       <DecoderText text="Community" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      Community Service is not something we do, it is who we are. Ey3 Technologies is a
+      Civic Tech company just as much as it is a systems engineering and cyber security
+      company. This is proven through our involvement with organizations in Baltimore,
+      Prince George&apos;s County, and the District of Columbia, providing mentorship,
+      internship, and experience to assist with building the next generation of engineers
+      and professionals. Ey3 is proud of our partnerships and relationships with the PGC
+      KEYS program, SANS Cyber Immersion Academy, and OnRamps to Careers, just to name a
+      few. We are always looking for new organizations to partner with that are impacting
+      the local community.
     </Text>
   </Fragment>
 );

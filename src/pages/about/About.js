@@ -1,28 +1,22 @@
-import sliceAnnotationLarge from 'assets/slice-annotation-large.png';
-import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png';
-import sliceAnnotation from 'assets/slice-annotation.png';
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
-import tbjr from 'assets/community-tbjr.jpg';
-import sliceBackgroundBarLarge from 'assets/slice-background-bar-large.jpg';
+import tbjr from 'assets/about-header.jpg';
+import sliceBackgroundBarLarge from 'assets/about-bar.jpg';
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from 'assets/slice-background-bar.jpg';
-import sliceBackgroundLarge from 'assets/community-outreach.jpg';
-import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
-import sliceBackground from 'assets/community-outreach.jpg';
+import sliceBackgroundBar from 'assets/about-bar.jpg';
+import sliceBackgroundLarge from 'assets/about-background.jpg';
+import sliceBackgroundPlaceholder from 'assets/slice-background.jpg';
+import sliceBackground from 'assets/about-background.jpg';
 import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
 import sliceIrl from 'assets/slice-irl.jpg';
-import sliceSidebarAnnotationsLarge from 'assets/slice-sidebar-annotations-large.png';
-import sliceSidebarAnnotationsPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
-import sliceSidebarAnnotations from 'assets/slice-sidebar-annotations.png';
-import sliceSidebarLayersLarge from 'assets/slice-sidebar-layers-large.png';
+import office from 'assets/about-office.jpg';
 import sliceSidebarLayersPlaceholder from 'assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from 'assets/slice-sidebar-layers.png';
-import sliceSlidesLarge from 'assets/slice-slides-large.jpg';
+import sliceSlidesLarge from 'assets/about-modem.jpg';
 import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
-import sliceSlides from 'assets/slice-slides.jpg';
+import sliceSlides from 'assets/about-modem.jpg';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
+import { List, ListItem } from 'components/List';
 import {
   ProjectBackground,
   ProjectContainer,
@@ -37,17 +31,17 @@ import {
 } from 'layouts/Project';
 import { Fragment } from 'react';
 import { media } from 'utils/style';
-import styles from './Community.module.css';
+import styles from './About.module.css';
 
-const title = 'Community Outreach';
+const title = 'About Us';
 const description =
-  'We 💖 the community, and have worked closely with numerous programs such as the PGC Keys as well as opening our own mentoring and internship programs to help young people get jobs in cyber.';
-const roles = ['User Research', 'Mentorship', 'Interface Design'];
+  "We are Ey3 (pronounced “Eye” 3), a cybersecurity and systems engineering consulting group in Prince George's County, Maryland.";
+const roles = ['Cybersecurity', 'Systems Engineering', 'Mentorship'];
 
-export const Community = () => {
+export const About = () => {
   return (
     <Fragment>
-      <Meta title={title} prefix="Projects" description={description} />
+      <Meta title={title} description={description} />
       <ProjectContainer className={styles.slice}>
         <ProjectBackground
           src={sliceBackground}
@@ -66,7 +60,7 @@ export const Community = () => {
             <ProjectImage
               srcSet={[tbjr, tbjr]}
               placeholder={sliceAppPlaceholder}
-              alt="The Slice web application showing a selected user annotation."
+              alt="A picture of a girl working."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
             />
           </ProjectSectionContent>
@@ -74,31 +68,22 @@ export const Community = () => {
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
-              <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
+              <ProjectSectionHeading>Who We Are</ProjectSectionHeading>
               <ProjectSectionText>
-                One of our interns, Cole Harriston, now has a Professsional Scrum Master
-                Certification. Here&apos;s what he had to say about it:
-              </ProjectSectionText>
-              <ProjectSectionText style={{ fontStyle: 'italic' }}>
-                &quot;Great way to end the day by getting my Professional Scrum Master I
-                Certificate! I&apos;ve enjoyed my time working with everyone involved in my
-                internship at Ey3 Technologies and I appreciate all the support!
-                #internship #scrum&quot;
+                We are Ey3 (<em>eye-three</em>), a cybersecurity and systems engineering
+                consulting group in Prince George&apos;s County, Maryland, providing
+                intelligent and innovative solutions to our customers&apos; challenges.
+                With over 25 years of experience supporting 5 separate DoD/IC agencies, 3
+                different Federal agencies, and companies from big to small, we have the
+                knowledge and talent to help our customers achieve their goals.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={[sliceSidebarLayers, sliceSidebarLayersLarge]}
+                srcSet={[office, office]}
                 placeholder={sliceSidebarLayersPlaceholder}
                 alt="The layers sidebar design, now with user profiles."
-                sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
-              />
-              <Image
-                className={styles.sidebarImage}
-                srcSet={[sliceSidebarAnnotations, sliceSidebarAnnotationsLarge]}
-                placeholder={sliceSidebarAnnotationsPlaceholder}
-                alt="Multiple user annotations on a shared layer."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
             </div>
@@ -107,14 +92,15 @@ export const Community = () => {
         <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+              <ProjectSectionHeading>What We Do</ProjectSectionHeading>
               <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
+                Problem-centric solutions are what define the status quo offerings of the
+                IT consulting industry. Need-centric solutions are what define the
+                disruptors and innovators that will lead tomorrow. We believe that the IT
+                industry deserves better than the typical offerings of consulting we see
+                today. We believe in innovative and intelligent solutions delivered with
+                integrity. Talent is what gets us in the door, but character is what
+                sustains us.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -137,23 +123,50 @@ export const Community = () => {
                   sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
                 />
               </div>
-              <div className={styles.gridForeground}>
+              {/* <div className={styles.gridForeground}>
                 <Image
                   srcSet={[sliceAnnotation, sliceAnnotationLarge]}
                   placeholder={sliceAnnotationPlaceholder}
                   alt="An annotation preview popover with statistics for shape perimeter and area."
                   sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
                 />
-              </div>
+              </div> */}
             </div>
             <div className={styles.gridText}>
-              <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
+              <ProjectSectionHeading>Our Services</ProjectSectionHeading>
               <ProjectSectionText>
-                Marking and annotating areas on high resolution biomedical images is the
-                core experience of the app, and it was easy to get lost or lose sense of
-                scale when zooming in on details. Adding measurements for the perimeter
-                and area of an annotation both helped to communicate the overall scale of
-                the image and how large the annotated feature is in comparison.
+                <List>
+                  <ListItem>Systems Engineering & Technical Assistance</ListItem>
+                  <List>
+                    <ListItem>
+                      Planning, Supporting and Managing successful programs and projects
+                    </ListItem>
+                    <ListItem>
+                      Identifying and applying need-based solutions to technical
+                      challenges
+                    </ListItem>
+                  </List>
+                  <ListItem>Cyber Security & Information Assurance</ListItem>
+                  <List>
+                    <ListItem>
+                      Security engineering and management, vulnerability assessments, and
+                      compliance
+                    </ListItem>
+                    <ListItem>Deployment and Continuous Monitoring</ListItem>
+                  </List>
+                  <ListItem>Research, Development, & Community Service</ListItem>
+                  <List>
+                    <ListItem>
+                      Providing research involving web3 technologies and Machine Learning.
+                      We are constantly evaluating modern applications and
+                      technologies to provide to our clients.
+                    </ListItem>
+                    <ListItem>
+                      Performing research and development to provide expertise and knowledge
+                      within the PGCPS system for our next generation of engineers.
+                    </ListItem>
+                  </List>
+                </List>
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -161,13 +174,13 @@ export const Community = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
+              <ProjectSectionHeading>Giving Back 💖</ProjectSectionHeading>
               <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
+                We perform research and development to provide expertise and knowledge
+                within the PGCPS system for our next generation of engineers. We&apos;ve
+                worked with the PGC Keys program and have our own mentorship and
+                internship programs to help the next generation get jobs in cyber and
+                engineering.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image

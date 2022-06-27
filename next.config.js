@@ -1,4 +1,8 @@
-module.exports = {
+const withBundleAnalyzer = process.env.ANALYZE === 'true' ? require('@next/bundle-analyzer')({
+  enabled: true
+}): (config) => config;
+
+module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   trailingSlash: true,
   pageExtensions: ['page.js', 'api.js'],
@@ -36,4 +40,4 @@ module.exports = {
 
     return config;
   },
-};
+});

@@ -7,6 +7,7 @@
   "author": "Hamish Williams <hello@hamishw.com>",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
+    "@next/bundle-analyzer": "^12.1.6",
     "@storybook/addon-a11y": "^6.4.22",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-controls": "^6.4.22",
@@ -49,6 +50,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export -o build/",
+    "analyze": "ANALYZE=true next build",
     "build:storybook": "build-storybook -o build-storybook && node scripts/draco-storybook",
     "deploy": "aws s3 sync --delete build/ s3://hamish-portfolio-site",
     "deploy:storybook": "aws s3 sync --delete build-storybook s3://hamish-portfolio-storybook",

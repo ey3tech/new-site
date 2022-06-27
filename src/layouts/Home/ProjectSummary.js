@@ -47,7 +47,7 @@ export const ProjectSummary = ({
       viewBox="0 0 750 137"
       data-visible={visible}
       data-light={theme.themeId === 'light'}
-      style={cssProps({ opacity: svgOpacity })}
+      style={cssProps({ opacity: svgOpacity }, {stroke: color})}
       className={styles.svg}
       data-device={device}
     >

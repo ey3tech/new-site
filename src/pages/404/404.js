@@ -1,5 +1,5 @@
-import notFoundPoster from 'assets/notfound.jpg';
-import notFoundVideo from 'assets/notfound.mp4';
+import notFoundPoster from 'assets/outoftouch.png';
+import notFoundVideo from 'assets/outoftouch.mp4';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Heading } from 'components/Heading';
@@ -70,11 +70,11 @@ export function Page404() {
               <a
                 className={styles.credit}
                 data-visible={visible}
-                href="https://www.imdb.com/title/tt0113568/"
+                href="https://youtube.com/watch?v=D00M2KZH1J0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Animation from Ghost in the Shell (1995)
+                Daryl Hall & John Oates - Out Of Touch (1984)
               </a>
             </div>
           </Fragment>

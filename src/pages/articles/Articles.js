@@ -113,7 +113,7 @@ const SkeletonPost = ({ index }) => {
         <div className={styles.postDetails}>
           <div aria-hidden className={styles.postDate}>
             <Divider notchWidth="64px" notchHeight="8px" />
-            Coming soon...
+            <DecoderText text="E# -- @Qk3 (A3)" style={{ textTransform: 'uppercase' }} />
           </div>
           <Heading
             className={styles.skeletonBone}
@@ -129,7 +129,7 @@ const SkeletonPost = ({ index }) => {
           />
           <div className={styles.postFooter}>
             <Button secondary iconHoverShift icon="chevronRight" as="div">
-              Read more
+              ER -- 02! (#)
             </Button>
             <Text className={styles.timecode} size="s">
               00:00:00:00
@@ -161,7 +161,7 @@ export const Articles = ({ posts, featured }) => {
       {posts.map(({ slug, ...post }, index) => (
         <ArticlesPost key={slug} slug={slug} index={index} {...post} />
       ))}
-      {Array(2)
+      {Array(3-(posts.length+1))
         .fill()
         .map((skeleton, index) => (
           <SkeletonPost key={index} />

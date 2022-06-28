@@ -61,7 +61,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
               <ProfileText visible={visible} titleId={titleId} />
               <div className={styles.button} data-visible={visible}>
                 <Button iconHoverShift href="community" iconEnd="arrowRight">
-                  More Info
+                  Community Outreach
                 </Button>
               </div>
             </div>

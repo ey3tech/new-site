@@ -8,6 +8,12 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="utf-8" />
+        <script
+          async
+          defer
+          data-website-id="c71ee12c-e80b-4101-bdfb-8d4b14e7c59e"
+          src="https://magic.thrzl.xyz/umami.js"
+        ></script>
 
         <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
@@ -25,7 +31,7 @@ export default function Document() {
           dangerouslySetInnerHTML={{
             __html: `
               const initialTheme = JSON.parse(localStorage.getItem('theme'));
-              document.body.dataset.theme = initialTheme || 'dark';
+              document.body.dataset.theme = initialTheme || 'light';
             `,
           }}
         />

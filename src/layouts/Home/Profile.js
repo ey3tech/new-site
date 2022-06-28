@@ -1,7 +1,7 @@
 import profileKatakana from 'assets/katakana-profile.svg?url';
-import profileImgLarge from 'assets/index-community.png';
-import profileImgPlaceholder from 'assets/index-community.png';
-import profileImg from 'assets/index-community.png';
+import profileImgLarge from 'assets/index-community.webp';
+import profileImgPlaceholder from 'assets/index-community.webp';
+import profileImg from 'assets/index-community.webp';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';

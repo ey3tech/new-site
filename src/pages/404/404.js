@@ -1,4 +1,4 @@
-import notFoundPoster from 'assets/outoftouch.png';
+import notFoundPoster from 'assets/outoftouch.webp';
 import notFoundVideo from 'assets/outoftouch.mp4';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';

@@ -1,7 +1,7 @@
-import dod2 from 'assets/dod1.png';
-import dod from 'assets/dod2.png';
-import cnf from 'assets/cnf.png';
-import fearless from 'assets/fearless.png';
+import dod2 from 'assets/dod1.webp';
+import dod from 'assets/dod2.webp';
+import cnf from 'assets/cnf.webp';
+import fearless from 'assets/fearless.webp';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';

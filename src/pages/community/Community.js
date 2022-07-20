@@ -74,16 +74,9 @@ export const Community = () => {
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
-              <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
+              <ProjectSectionHeading>Why we care</ProjectSectionHeading>
               <ProjectSectionText>
-                One of our interns, Cole Harriston, now has a Professsional Scrum Master
-                Certification. Here&apos;s what he had to say about it:
-              </ProjectSectionText>
-              <ProjectSectionText style={{ fontStyle: 'italic' }}>
-                &quot;Great way to end the day by getting my Professional Scrum Master I
-                Certificate! I&apos;ve enjoyed my time working with everyone involved in my
-                internship at Ey3 Technologies and I appreciate all the support!
-                #internship #scrum&quot;
+              At Ey3 we work hard to impact the communities where we work, where we live, and where we care.  This is why we work closely with several programs covering communities in Baltimore, Prince George&apos;s County, and the District of Columbia.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -107,14 +100,9 @@ export const Community = () => {
         <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+              <ProjectSectionHeading>Mentorship</ProjectSectionHeading>
               <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
+              Providing career and life guidance to individuals starting and navigating new careers in Tech, as well as helping to provide easier pathways to knowledge and networks of individuals that can help them.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -147,13 +135,9 @@ export const Community = () => {
               </div>
             </div>
             <div className={styles.gridText}>
-              <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
+              <ProjectSectionHeading>Internship</ProjectSectionHeading>
               <ProjectSectionText>
-                Marking and annotating areas on high resolution biomedical images is the
-                core experience of the app, and it was easy to get lost or lose sense of
-                scale when zooming in on details. Adding measurements for the perimeter
-                and area of an annotation both helped to communicate the overall scale of
-                the image and how large the annotated feature is in comparison.
+                Providing opportunities for individuals within our communities to springboard into a career of their choice, ranging in topics from Cyber Threat Intelligence and Cyber Policy, to Social Media and Graphic Design.  
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -161,13 +145,9 @@ export const Community = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
+              <ProjectSectionHeading>Partnership</ProjectSectionHeading>
               <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
+              It takes a village - which is why we partner with other organizations that are doing work in the areas of workforce development, re-entry, and career up & re-skilling.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image

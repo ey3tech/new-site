@@ -1,8 +1,6 @@
 import sliceAnnotationLarge from 'assets/slice-annotation-large.png';
 import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png';
 import sliceAnnotation from 'assets/slice-annotation.png';
-import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
-import tbjr from 'assets/community-tbjr.jpg';
 import sliceBackgroundBarLarge from 'assets/slice-background-bar-large.jpg';
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
 import sliceBackgroundBar from 'assets/slice-background-bar.jpg';
@@ -27,7 +25,6 @@ import {
   ProjectBackground,
   ProjectContainer,
   ProjectHeader,
-  ProjectImage,
   ProjectSection,
   ProjectSectionColumns,
   ProjectSectionContent,
@@ -40,9 +37,8 @@ import { media } from 'utils/style';
 import styles from './Community.module.css';
 
 const title = 'Community Outreach';
-const description =
-  'We 💖 the community, and have worked closely with numerous programs such as the PGC Keys as well as opening our own mentoring and internship programs to help young people get jobs in cyber.';
-const roles = ['User Research', 'Mentorship', 'Interface Design'];
+const description = "At Ey3 we work hard to impact the communities where we work, where we live, and where we care.  This is why we work closely with several programs covering communities in Baltimore, Prince George's County, and the District of Columbia.";
+const roles = ['Mentorship', 'Internship', 'Partnership'];
 
 export const Community = () => {
   return (
@@ -61,16 +57,6 @@ export const Community = () => {
           url="https://www.best.edu.au/s/q2yjjvl7?data=8%404!9%4020303!10%40-15087&version=1"
           roles={roles}
         />
-        <ProjectSection padding="top">
-          <ProjectSectionContent>
-            <ProjectImage
-              srcSet={[tbjr, tbjr]}
-              placeholder={sliceAppPlaceholder}
-              alt="The Slice web application showing a selected user annotation."
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
-            />
-          </ProjectSectionContent>
-        </ProjectSection>
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>

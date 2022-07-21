@@ -13,7 +13,6 @@ import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { cssProps, media } from 'utils/style';
 import styles from './ProjectSummary.module.css';
-import Link from 'next/link';
 
 const Model = dynamic(() => import('components/Model').then(mod => mod.Model));
 

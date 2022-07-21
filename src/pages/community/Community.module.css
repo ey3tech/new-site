@@ -68,8 +68,6 @@
 }
 
 .sidebarImages {
-  display: grid;
-  grid-template-columns: repeat(6, [col] 1fr);
   align-items: center;
 
   @media (--mediaTablet) {
@@ -101,7 +99,6 @@
     grid-row: 1;
     position: relative;
     top: 5%;
-    opacity: 0.4;
   }
 
   &:last-child {

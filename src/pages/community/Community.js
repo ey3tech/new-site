@@ -1,23 +1,15 @@
-import sliceAnnotationLarge from 'assets/slice-annotation-large.png';
-import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png';
-import sliceAnnotation from 'assets/slice-annotation.png';
-import sliceBackgroundBarLarge from 'assets/slice-background-bar-large.jpg';
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from 'assets/slice-background-bar.jpg';
+import communityInternship from 'assets/community-internship.webp';
 import sliceBackgroundLarge from 'assets/community-outreach.webp';
 import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
 import sliceBackground from 'assets/community-outreach.webp';
 import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
-import sliceIrl from 'assets/slice-irl.jpg';
-import sliceSidebarAnnotationsLarge from 'assets/slice-sidebar-annotations-large.png';
-import sliceSidebarAnnotationsPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
-import sliceSidebarAnnotations from 'assets/slice-sidebar-annotations.png';
-import sliceSidebarLayersLarge from 'assets/slice-sidebar-layers-large.png';
-import sliceSidebarLayersPlaceholder from 'assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from 'assets/slice-sidebar-layers.png';
-import sliceSlidesLarge from 'assets/slice-slides-large.jpg';
+import sliceIrl from 'assets/community-partnership.webp';
+import communityInternPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
+import communityIntern from 'assets/community-intern.webp';
 import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
-import sliceSlides from 'assets/slice-slides.jpg';
+import communityMentorship from 'assets/community-mentorship.webp';
+import Link from 'components/Link';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
@@ -68,15 +60,8 @@ export const Community = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={[sliceSidebarLayers, sliceSidebarLayersLarge]}
-                placeholder={sliceSidebarLayersPlaceholder}
-                alt="The layers sidebar design, now with user profiles."
-                sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
-              />
-              <Image
-                className={styles.sidebarImage}
-                srcSet={[sliceSidebarAnnotations, sliceSidebarAnnotationsLarge]}
-                placeholder={sliceSidebarAnnotationsPlaceholder}
+                srcSet={[communityIntern]}
+                placeholder={communityInternPlaceholder}
                 alt="Multiple user annotations on a shared layer."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
@@ -92,7 +77,7 @@ export const Community = () => {
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
-              srcSet={[sliceSlides, sliceSlidesLarge]}
+              srcSet={[communityMentorship]}
               placeholder={sliceSlidesPlaceholder}
               alt="The new My Slides tab in slice, showing annotated and favorited slides."
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
@@ -101,29 +86,20 @@ export const Community = () => {
         </ProjectSection>
         <ProjectSection padding="top">
           <ProjectSectionContent className={styles.grid}>
-            <div className={styles.gridImage}>
-              <div className={styles.gridBackground}>
+            <div>
                 <Image
-                  srcSet={[sliceBackgroundBar, sliceBackgroundBarLarge]}
+                  srcSet={[communityInternship]}
                   placeholder={sliceBackgroundBarPlaceholder}
                   alt=""
                   role="presentation"
                   sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
                 />
-              </div>
-              <div className={styles.gridForeground}>
-                <Image
-                  srcSet={[sliceAnnotation, sliceAnnotationLarge]}
-                  placeholder={sliceAnnotationPlaceholder}
-                  alt="An annotation preview popover with statistics for shape perimeter and area."
-                  sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
-                />
-              </div>
             </div>
             <div className={styles.gridText}>
               <ProjectSectionHeading>Internship</ProjectSectionHeading>
               <ProjectSectionText>
-                Providing opportunities for individuals within our communities to springboard into a career of their choice, ranging in topics from Cyber Threat Intelligence and Cyber Policy, to Social Media and Graphic Design.  
+                Providing opportunities for individuals within our communities to springboard into a career of their choice, ranging in topics from Cyber Threat Intelligence and Cyber Policy, to Social Media and Graphic Design. 
+                We work closely with the <a href="https://www.employpg.org/youth/keys/">PGC Keys</a> program to provide internships to young people in Prince George&apos;s County.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>

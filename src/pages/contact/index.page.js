@@ -71,7 +71,7 @@ const Contact = () => {
       />
       <Transition unmount in={!complete} timeout={1600}>
         {(visible, status) => (
-          <form className={styles.form} method="post" onSubmit={onSubmit}>
+          <form className={styles.form} method="post" onSubmit={onSubmit} style={{textTransform: "uppercase"}}>
             <Heading
               className={styles.title}
               data-status={status}
@@ -79,7 +79,7 @@ const Contact = () => {
               as="h1"
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
-              <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
+              <DecoderText text="CONTACT" start={status !== 'exited'} delay={300} />
             </Heading>
             <Divider
               className={styles.divider}

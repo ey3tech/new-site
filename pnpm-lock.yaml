@@ -2,43 +2,43 @@ lockfileVersion: 5.4
 
 specifiers:
   '@mapbox/rehype-prism': ^0.8.0
-  '@next/bundle-analyzer': ^12.2.5
-  '@storybook/addon-a11y': ^6.5.10
-  '@storybook/addon-actions': ^6.5.10
-  '@storybook/addon-controls': ^6.5.10
-  '@storybook/addon-toolbars': ^6.5.10
-  '@storybook/builder-webpack5': ^6.5.10
-  '@storybook/manager-webpack5': ^6.5.10
-  '@storybook/react': ^6.5.10
-  '@svgr/webpack': ^6.3.1
-  esbuild: ^0.14.54
-  eslint: ^8.23.0
-  eslint-config-next: ^12.2.5
-  framer-motion: ^6.5.1
+  '@next/bundle-analyzer': ^12.1.6
+  '@storybook/addon-a11y': ^6.4.22
+  '@storybook/addon-actions': ^6.4.22
+  '@storybook/addon-controls': ^6.4.22
+  '@storybook/addon-toolbars': ^6.4.22
+  '@storybook/builder-webpack5': ^6.4.22
+  '@storybook/manager-webpack5': ^6.4.22
+  '@storybook/react': ^6.4.22
+  '@svgr/webpack': ^6.2.1
+  esbuild: ^0.14.38
+  eslint: ^8.15.0
+  eslint-config-next: ^12.1.6
+  framer-motion: ^6.3.3
   fs-extra: ^10.1.0
-  globby: ^13.1.2
-  mdx-bundler: ^9.0.1
-  next: ^12.2.5
-  postcss: ^8.4.16
+  globby: ^13.1.1
+  mdx-bundler: ^9.0.0
+  next: ^12.1.6
+  postcss: ^8.4.13
   postcss-flexbugs-fixes: ^5.0.2
-  postcss-preset-env: ^7.8.0
-  prettier: ^2.7.1
+  postcss-preset-env: ^7.5.0
+  prettier: ^2.6.2
   puppeteer: ^13.7.0
-  react: ^18.2.0
-  react-dom: ^18.2.0
+  react: ^18.1.0
+  react-dom: ^18.1.0
   reading-time: ^1.5.0
   rehype-img-size: ^1.0.1
   rehype-preset-minify: ^6.0.0
   rehype-slug: ^5.0.1
   sharp: ^0.30.7
-  storybook: ^6.5.10
-  storybook-addon-next: ^1.6.7
-  stylelint: ^14.11.0
+  storybook: ^6.4.22
+  storybook-addon-next: ^1.6.2
+  stylelint: ^14.8.2
   stylelint-config-css-modules: ^4.1.0
   stylelint-config-prettier: ^9.0.3
   stylelint-config-standard: ^25.0.0
-  three: ^0.140.2
-  three-stdlib: ^2.15.0
+  three: ^0.140.0
+  three-stdlib: ^2.10.1
 
 dependencies:
   framer-motion: 6.5.1_biqbaboplfbrettd7655fr4n2y
@@ -591,7 +591,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.18.9
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.18.8_@babel+core@7.12.9
     dev: true
@@ -3645,13 +3645,13 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.4.6
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/eslint/8.4.6:
     resolution: {integrity: sha512-/fqTbjxyFUaYNO7VcW5g+4npmqVACz1bB7RTHYuLj+PRjw9hrCwrUXVQFpChUS0JsyEFvMZ7U/PfmvWgxJhI9g==}
     dependencies:
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
     dev: true
 
@@ -3667,20 +3667,19 @@ packages:
 
   /@types/estree/1.0.0:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
-    dev: false
 
   /@types/glob/7.2.0:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 16.11.56
+      '@types/node': 18.7.14
     dev: true
 
   /@types/glob/8.0.0:
     resolution: {integrity: sha512-l6NQsDDyQUVeoTynNpC9uRvCUint/gSUXQA2euwmTuWGvPY5LSDUu6tkCtJB2SvGQlJQzLaKqcGZP4//7EDveA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 16.11.56
+      '@types/node': 18.7.14
     dev: true
 
   /@types/hast/2.3.4:
@@ -3754,7 +3753,7 @@ packages:
   /@types/node-fetch/2.6.2:
     resolution: {integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==}
     dependencies:
-      '@types/node': 16.11.56
+      '@types/node': 18.7.14
       form-data: 3.0.1
     dev: true
 
@@ -3828,7 +3827,7 @@ packages:
   /@types/webpack-sources/3.2.0:
     resolution: {integrity: sha512-Ft7YH3lEVRQ6ls8k4Ff1oB4jN6oy/XmU6tQISKdhfh+1mR+viZFphS6WL0IrtDOzvefmJg5a0s7ZQoRXwqTEFg==}
     dependencies:
-      '@types/node': 16.11.56
+      '@types/node': 18.7.14
       '@types/source-list-map': 0.1.2
       source-map: 0.7.4
     dev: true
@@ -3836,7 +3835,7 @@ packages:
   /@types/webpack/4.41.32:
     resolution: {integrity: sha512-cb+0ioil/7oz5//7tZUSwbrSAN/NWHrQylz5cW8G0dWTcF/g+/dSdMlKVZspBYuMAN1+WnwHrkxiRrLcwd0Heg==}
     dependencies:
-      '@types/node': 16.11.56
+      '@types/node': 18.7.14
       '@types/tapable': 1.0.8
       '@types/uglify-js': 3.17.0
       '@types/webpack-sources': 3.2.0
@@ -5166,7 +5165,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -9429,7 +9428,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 16.11.56
+      '@types/node': 18.7.14
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -9438,7 +9437,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 16.11.56
+      '@types/node': 18.7.14
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
@@ -12255,17 +12254,6 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
-    dev: true
-
-  /promise-inflight/1.0.1_bluebird@3.7.2:
-    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
-    peerDependencies:
-      bluebird: '*'
-    peerDependenciesMeta:
-      bluebird:
-        optional: true
-    dependencies:
-      bluebird: 3.7.2
     dev: true
 
   /promise.allsettled/1.0.5:

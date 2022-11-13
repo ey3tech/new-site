@@ -35,7 +35,7 @@ import styles from './About.module.css';
 
 const title = 'About Us';
 const description =
-  "We are Ey3 (pronounced “Eye” 3), a cybersecurity and systems engineering consulting group in Prince George's County, Maryland.";
+  "We are Ey3 (pronounced “Eye” 3), an EDWOSB and 8a Certified cybersecurity and systems engineering consulting group, headquartered in Prince George's County, Maryland, proudly serving the DoD/IC and our local community.";
 const roles = ['Cybersecurity', 'Systems Engineering', 'Community Partnership'];
 
 export const About = () => {
@@ -70,12 +70,13 @@ export const About = () => {
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Who We Are</ProjectSectionHeading>
               <ProjectSectionText>
-                We are Ey3 (<em>eye-three</em>), a cybersecurity and systems engineering
-                consulting group in Prince George&apos;s County, Maryland, providing
-                intelligent and innovative solutions to our customers&apos; challenges.
-                With over 25 years of experience supporting 5 separate DoD/IC agencies, 3
-                different Federal agencies, and companies from big to small, we have the
-                knowledge and talent to help our customers achieve their goals.
+                Simply put, we are a talent-driven and character-rich organization that
+                loves helping and serving people. Evident in our individual service spanning
+                5 separate DoD/IC agencies, 4 different Federal agencies, companies ranging
+                from Fortune 500's to local small businesses, and supporting numerous
+                community-based programs from DC to Prince George's County to Baltimore - we
+                live and breathe support and service.
+
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -154,7 +155,7 @@ export const About = () => {
                     </ListItem>
                     <ListItem>Deployment and Continuous Monitoring</ListItem>
                   </List>
-                  <ListItem>Research, Development, & Community Service</ListItem>
+                  <ListItem>Research & Development</ListItem>
                   <List>
                     <ListItem>
                       Providing research involving web3 technologies and Machine Learning.
@@ -165,6 +166,7 @@ export const About = () => {
                       Performing research and development to provide expertise and knowledge
                       within the PGCPS system for our next generation of engineers.
                     </ListItem>
+                    <ListItem>Analyze how emerging and known technologies can be applied to create better, more performant, more secure systems.</ListItem>
                   </List>
                 </List>
               </ProjectSectionText>
@@ -180,7 +182,9 @@ export const About = () => {
                 within the PGCPS system for our next generation of engineers. We&apos;ve
                 worked with the PGC Keys program and have our own mentorship and
                 internship programs to help the next generation get jobs in cyber and
-                engineering.
+                engineering. We also provide Mentoring and Internships to multiple programs
+                spanning DC, Prince George's County, and Baltimore City assisting populations
+                with growing and advancing their careers in IT and cybersecurity specifically.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image

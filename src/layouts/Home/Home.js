@@ -1,6 +1,8 @@
 import dod2 from 'assets/dod1.webp';
 import dod from 'assets/dod2.webp';
 import cnf from 'assets/cnf.webp';
+import epg1 from 'assets/epg1.webp';
+import epg2 from 'assets/epg2.webp';
 import fearless from 'assets/fearless.webp';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
@@ -19,10 +21,11 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
   const community = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, community];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, community];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -78,7 +81,7 @@ export const Home = () => {
         description="We provided reliable sub-contract services to organizations within the DoD, including Fearless."
         model={{
           type: 'laptop',
-          alt: 'abstract waves image',
+          alt: 'Fearless Homepage',
           textures: [
             {
               srcSet: [fearless, fearless],
@@ -98,7 +101,7 @@ export const Home = () => {
         description="We performed a variety of systems engineering tasks from testing and deployment management to outage deconfliction and implementation management."
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'DoD Homepage',
           textures: [
             {
               srcSet: [dod],
@@ -118,10 +121,10 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Cyber Net Force"
-        description="We provided testing and documentation services to CNF."
+        description="We provided sub-contracting services to include Cyber Network Operations (CNO) Testing and Evaluation, as well as Security Engineering and DevSecOps support for DoD customers."
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Cyber Net Force Homepage',
           textures: [
             {
               srcSet: [cnf],
@@ -130,6 +133,30 @@ export const Home = () => {
           ],
         }}
         color="#c02b30"
+      />
+      <ProjectSummary
+        id="project-4"
+        alternate
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
+        title="Employ Prince George's"
+        description="Provide Workforce Development IT Training for populations within Prince George's County to include youth, returning citizens, and senior citizens for the purpose of upskilling, reskilling, and career transitioning."
+        model={{
+          type: 'phone',
+          alt: 'EPG Homepage',
+          textures: [
+            {
+              srcSet: [epg1],
+              placeholder: epg1,
+            },
+            {
+              srcSet: [epg2],
+              placeholder: epg2,
+            },
+          ],
+        }}
+        color="#f26132"
       />
       <Profile
         sectionRef={community}

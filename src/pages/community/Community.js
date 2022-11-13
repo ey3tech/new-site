@@ -4,7 +4,7 @@ import sliceBackgroundLarge from 'assets/community-outreach.webp';
 import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
 import sliceBackground from 'assets/community-outreach.webp';
 import sliceIrlPlaceholder from 'assets/community-teamwork-poster.webp';
-import sliceIrl from 'assets/community-teamwork.mp4';
+import sliceIrl from 'assets/community-teamwork.webp';
 import communityInternPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
 import communityIntern from 'assets/community-intern.webp';
 import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
@@ -27,6 +27,8 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Community.module.css';
 import { DecoderText } from 'components/DecoderText';
+import { List, ListItem } from 'components/List';
+import { Link } from 'components/Link';
 
 const title = 'Community Outreach';
 const description = "At Ey3 we work hard to impact the communities where we work, where we live, and where we care.  This is why we work closely with several programs covering communities in Baltimore, Prince George's County, and the District of Columbia.";
@@ -54,7 +56,12 @@ export const Community = () => {
             <div className={styles.imagesText}>
               <ProjectSectionHeading style={{textTransform: "uppercase"}}><DecoderText delay={0} text={"Why we care"}/></ProjectSectionHeading>
               <ProjectSectionText>
-              At Ey3 we work hard to impact the communities where we work, where we live, and where we care.  This is why we work closely with several programs covering communities in Baltimore, Prince George&apos;s County, and the District of Columbia.
+                At Ey3 we work hard to impact the communities where we work, where we live, and where we care. This is why we work closely with several programs covering communities in Baltimore, Prince George's County, and the District of Columbia.  Some of the amazing organizations we work with and support are:<br/>
+                <List>
+                  <ListItem>KEYS</ListItem>
+                  <ListItem>OnRamps</ListItem>
+                  <ListItem>2nd Chance University</ListItem>
+                </List>
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -62,7 +69,7 @@ export const Community = () => {
                 className={styles.sidebarImage}
                 srcSet={[communityIntern]}
                 placeholder={communityInternPlaceholder}
-                alt="Multiple user annotations on a shared layer."
+                alt="happy employee"
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
             </div>
@@ -79,7 +86,7 @@ export const Community = () => {
             <Image
               srcSet={[communityMentorship]}
               placeholder={sliceSlidesPlaceholder}
-              alt="The new My Slides tab in slice, showing annotated and favorited slides."
+              alt="two businesswomen talking to each other"
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
           </ProjectSectionContent>
@@ -99,7 +106,7 @@ export const Community = () => {
               <ProjectSectionHeading style={{ textTransform: "uppercase" }}><DecoderText delay={0} text={"Internship"} /></ProjectSectionHeading>
               <ProjectSectionText>
                 Providing opportunities for individuals within our communities to springboard into a career of their choice, ranging in topics from Cyber Threat Intelligence and Cyber Policy, to Social Media and Graphic Design. 
-                We work closely with the <a href="https://www.employpg.org/youth/keys/">PGC Keys</a> program to provide internships to young people in Prince George&apos;s County.
+                We work closely with the <Link href="https://www.employpg.org/youth/keys/">PGC Keys</Link> program to provide internships to young people in Prince George&apos;s County.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -112,21 +119,11 @@ export const Community = () => {
               It takes a village - which is why we partner with other organizations that are doing work in the areas of workforce development, re-entry, and career up & re-skilling.
               </ProjectSectionText>
             </ProjectTextRow>
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className={styles.video}
-              poster={sliceIrlPlaceholder.src}
-            >
-              <source src={sliceIrl} type="video/mp4" />
-            </video>
-            {/* <Image
+            <Image
               src={sliceIrl}
               placeholder={sliceIrlPlaceholder}
-              alt="Students at the University of New South Wales using the new collaborative annotation features"
-            /> */}
+              alt="Happy adult students sitting outside"
+            />
           </ProjectSectionContent>
         </ProjectSection>
       </ProjectContainer>

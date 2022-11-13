@@ -32,4 +32,9 @@ export const socialLinks = [
     url: 'https://github.com/ey3tech',
     icon: 'github',
   },
+  {
+    label: 'Instagram',
+    url: 'https://www.instagram.com/ey3tech/',
+    icon: 'instagram',
+  },
 ];

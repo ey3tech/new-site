@@ -36,7 +36,7 @@ import styles from './About.module.css';
 const title = 'About Us';
 const description =
   "We are Ey3 (pronounced “Eye” 3), a cybersecurity and systems engineering consulting group in Prince George's County, Maryland.";
-const roles = ['Cybersecurity', 'Systems Engineering', 'Mentorship'];
+const roles = ['Cybersecurity', 'Systems Engineering', 'Community Partnership'];
 
 export const About = () => {
   return (
@@ -171,7 +171,7 @@ export const About = () => {
             </div>
           </ProjectSectionContent>
         </ProjectSection>
-        <ProjectSection>
+        <ProjectSection light="true">
           <ProjectSectionContent>
             <ProjectTextRow>
               <ProjectSectionHeading>Giving Back 💖</ProjectSectionHeading>

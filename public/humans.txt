@@ -1,29 +1,30 @@
-__  __  __
-\ \ \ \ \/
- \ \/\ \
-  \/  \/
+    ________  _______    ____________________  __
+   / ____/\ \/ /__  /   /_  __/ ____/ ____/ / / /
+  / __/    \  / /_ <     / / / __/ / /   / /_/ / 
+ / /___    / /___/ /    / / / /___/ /___/ __  /  
+/_____/   /_//____/    /_/ /_____/\____/_/ /_/   
 
 The humans.txt file explains the team, technology,
 and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+SYS ENG X CYBER | YOU'RE OUT OF TOUCH, I'M OUT OF TIME (TIME), BUT I'M OUT OF MY HEAD WHEN YOU'RE NOT AROUND
 
-Hamish Williams
-Hand crafted design & web development
+Ey3 Technologies
+A CYBER SECURITY & SYSTEMS ENGINEERING COMPANY
 
-Design tools:
-Figma
-Photoshop
-Blender
+twitter.com/ey3tech
+github.com/ey3tech
+
+_______________________________________________________________________________
 
 twitter.com/hamishmw
 github.com/hamishmw
 
 _______________________________________________________________________________
 
-TECHNOLOGY | テクノロジー
+TECHNOLOGY
 
 React
 Next.js
@@ -32,7 +33,6 @@ Framer Motion
 
 _______________________________________________________________________________
 
-FONTS | フォント
+FONTS
 
 Gotham
-Hiragino Kaku Gothic

@@ -56,7 +56,7 @@ export const Community = () => {
             <div className={styles.imagesText}>
               <ProjectSectionHeading style={{textTransform: "uppercase"}}><DecoderText delay={0} text={"Why we care"}/></ProjectSectionHeading>
               <ProjectSectionText>
-                At Ey3 we work hard to impact the communities where we work, where we live, and where we care. This is why we work closely with several programs covering communities in Baltimore, Prince George's County, and the District of Columbia.  Some of the amazing organizations we work with and support are:<br/>
+                At Ey3 we work hard to impact the communities where we work, where we live, and where we care. This is why we work closely with several programs covering communities in Baltimore, Prince George&apos;s County, and the District of Columbia.  Some of the amazing organizations we work with and support are:<br/>
                 <List>
                   <ListItem>KEYS</ListItem>
                   <ListItem>OnRamps</ListItem>

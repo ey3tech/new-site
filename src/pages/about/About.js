@@ -73,8 +73,8 @@ export const About = () => {
                 Simply put, we are a talent-driven and character-rich organization that
                 loves helping and serving people. Evident in our individual service spanning
                 5 separate DoD/IC agencies, 4 different Federal agencies, companies ranging
-                from Fortune 500's to local small businesses, and supporting numerous
-                community-based programs from DC to Prince George's County to Baltimore - we
+                from Fortune 500&apos;s to local small businesses, and supporting numerous
+                community-based programs from DC to Prince George&apos;s County to Baltimore - we
                 live and breathe support and service.
 
               </ProjectSectionText>
@@ -183,7 +183,7 @@ export const About = () => {
                 worked with the PGC Keys program and have our own mentorship and
                 internship programs to help the next generation get jobs in cyber and
                 engineering. We also provide Mentoring and Internships to multiple programs
-                spanning DC, Prince George's County, and Baltimore City assisting populations
+                spanning DC, Prince George&apos;s County, and Baltimore City assisting populations
                 with growing and advancing their careers in IT and cybersecurity specifically.
               </ProjectSectionText>
             </ProjectTextRow>

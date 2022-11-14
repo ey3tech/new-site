@@ -31,7 +31,7 @@ import { List, ListItem } from 'components/List';
 import { Link } from 'components/Link';
 
 const title = 'Community Outreach';
-const description = "At Ey3 we work hard to impact the communities where we work, where we live, and where we care.  This is why we work closely with several programs covering communities in Baltimore, Prince George's County, and the District of Columbia.";
+const description = "We are a community-focused company - so much so, that we ensured that it was included in our core values and tenets of Ey3.  We believe it our duty to utilize our knowledge and expertise in technology to impact the communities in which we work, we live, and we care.";
 const roles = ['Mentorship', 'Internship', 'Partnership'];
 
 export const Community = () => {
@@ -58,9 +58,9 @@ export const Community = () => {
               <ProjectSectionText>
                 At Ey3 we work hard to impact the communities where we work, where we live, and where we care. This is why we work closely with several programs covering communities in Baltimore, Prince George&apos;s County, and the District of Columbia.  Some of the amazing organizations we work with and support are:<br/>
                 <List>
-                  <ListItem>KEYS</ListItem>
-                  <ListItem>OnRamps</ListItem>
-                  <ListItem>2nd Chance University</ListItem>
+                  <ListItem><Link href="https://www.employpg.org/youth/keys/">KEYS</Link></ListItem>
+                  <ListItem><Link href="https://onramps.utexas.edu/">OnRamps</Link></ListItem>
+                  <ListItem><Link href="https://2ndchanceuniversity.org/">2nd Chance University</Link></ListItem>
                 </List>
               </ProjectSectionText>
             </div>

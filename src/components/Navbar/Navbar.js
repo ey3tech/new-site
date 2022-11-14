@@ -210,6 +210,7 @@ const NavbarIcons = ({ desktop }) => (
         href={url}
         target="_blank"
         rel="noopener noreferrer"
+        style={{height: "min-content"}}
       >
         <Icon className={styles.navIcon} icon={icon} />
       </a>

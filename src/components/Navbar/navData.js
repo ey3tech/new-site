@@ -1,9 +1,5 @@
 export const navLinks = [
   {
-    label: 'Projects',
-    pathname: '/#project-1',
-  },
-  {
     label: 'About',
     pathname: '/about',
   },

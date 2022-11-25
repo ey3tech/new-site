@@ -77,7 +77,6 @@ export const Post = ({ children, title, date, abstract, banner, timecode, ogImag
                   <span
                     className={styles.titleWord}
                     style={cssProps({ delay: numToMs(index * 100 + 100) })}
-                    index={index}
                   >
                     {word}
                     {index !== title.split(' ').length - 1 ? ' ' : ''}

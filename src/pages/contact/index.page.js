@@ -157,7 +157,7 @@ const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              We'll get back to you soon!
+              We&apos;ll get back to you soon!
             </Text>
             <Button
               secondary

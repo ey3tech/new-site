@@ -33,16 +33,10 @@ const Contact = () => {
     try {
       setSending(true);
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
+      const response = await fetch(`https://api.web3forms.com/submit`, {
         method: 'POST',
         mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: email.value,
-          message: message.value,
-        }),
+        body: new FormData(document.getElementById('contact-form')),
       });
 
       const responseMessage = await response.json();
@@ -71,7 +65,7 @@ const Contact = () => {
       />
       <Transition unmount in={!complete} timeout={1600}>
         {(visible, status) => (
-          <form className={styles.form} method="post" onSubmit={onSubmit} style={{textTransform: "uppercase"}}>
+          <form className={styles.form} id="contact-form" method="POST" onSubmit={onSubmit} style={{textTransform: "uppercase"}}>
             <Heading
               className={styles.title}
               data-status={status}
@@ -86,6 +80,7 @@ const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay, 0.4)}
             />
+            <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY}/>
             <Input
               required
               className={styles.input}
@@ -95,6 +90,7 @@ const Contact = () => {
               label="Your Email"
               type="email"
               maxLength={512}
+              name="email"
               {...email}
             />
             <Input
@@ -106,6 +102,7 @@ const Contact = () => {
               autoComplete="off"
               label="Message"
               maxLength={4096}
+              name="message"
               {...message}
             />
             <Transition in={statusError} timeout={msToNum(tokens.base.durationM)}>
@@ -160,7 +157,7 @@ const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              I’ll get back to you within a couple days, sit tight
+              We'll get back to you soon!
             </Text>
             <Button
               secondary

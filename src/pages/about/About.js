@@ -95,13 +95,12 @@ export const About = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>What We Do</ProjectSectionHeading>
               <ProjectSectionText>
-                Problem-centric solutions are what define the status quo offerings of the
-                IT consulting industry. Need-centric solutions are what define the
-                disruptors and innovators that will lead tomorrow. We believe that the IT
-                industry deserves better than the typical offerings of consulting we see
-                today. We believe in innovative and intelligent solutions delivered with
-                integrity. Talent is what gets us in the door, but character is what
-                sustains us.
+              We solve issues at the root instead of the surface, by focusing
+              on the need versus the problem.  The Ey3 Process is simple - We <b>listen</b> 
+              to our customers like they&apos;re our favorite song. We <b>identify</b> the things that
+               keep our customers up at night and/or prevent them from going to happy hours, kid&apos;s 
+               games/recitals, and taking the time off. We <b>solve</b>  the issues based on the 
+               needs, to prevent repeat problems. Repeat.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -166,7 +165,8 @@ export const About = () => {
                       Performing research and development to provide expertise and knowledge
                       within the PGCPS system for our next generation of engineers.
                     </ListItem>
-                    <ListItem>Analyze how emerging and known technologies can be applied to create better, more performant, more secure systems.</ListItem>
+                    <ListItem>Analyze how emerging and present technologies can be applied to create better, more performant, more secure systems.</ListItem>
+                    <ListItem>Brainstorm methods of further securing people&apos;s data</ListItem>
                   </List>
                 </List>
               </ProjectSectionText>
@@ -184,7 +184,11 @@ export const About = () => {
                 internship programs to help the next generation get jobs in cyber and
                 engineering. We also provide Mentoring and Internships to multiple programs
                 spanning DC, Prince George&apos;s County, and Baltimore City assisting populations
-                with growing and advancing their careers in IT and cybersecurity specifically.
+                with growing and advancing their careers in IT and cybersecurity specifically. We 
+                strive to provide Mentoring and Internships to multiple programs spanning DC, Prince 
+                George&apos;s County, and Baltimore City assisting populations (youth, underserved, 
+                returning citizens, senior citizens) with growing and advancing their careers in IT and
+                 cybersecurity specifically.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image

@@ -166,7 +166,6 @@ export const About = () => {
                       within the PGCPS system for our next generation of engineers.
                     </ListItem>
                     <ListItem>Analyze how emerging and present technologies can be applied to create better, more performant, more secure systems.</ListItem>
-                    <ListItem>Brainstorm methods of further securing people&apos;s data</ListItem>
                   </List>
                 </List>
               </ProjectSectionText>

@@ -78,7 +78,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Fearless"
-        description="We provided reliable sub-contract services to organizations within the DoD, including Fearless."
+        description="Ey3 Technologies provided reliable sub-contract services to organizations within the DoD, including Fearless."
         model={{
           type: 'laptop',
           alt: 'Fearless Homepage',
@@ -98,7 +98,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Department of Defense"
-        description="We performed a variety of systems engineering tasks from testing and deployment management to outage deconfliction and implementation management."
+        description="Ey3 performed a variety of systems engineering tasks from testing and deployment management to outage deconfliction and implementation management."
         model={{
           type: 'phone',
           alt: 'DoD Homepage',
@@ -121,7 +121,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Cyber Net Force"
-        description="We provided sub-contracting services to include Cyber Network Operations (CNO) Testing and Evaluation, as well as Security Engineering and DevSecOps support for DoD customers."
+        description="Ey3 provided sub-contracting services to include Cyber Network Operations (CNO) Testing and Evaluation, as well as Security Engineering and DevSecOps support for DoD customers."
         model={{
           type: 'laptop',
           alt: 'Cyber Net Force Homepage',
@@ -141,7 +141,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectFour.current)}
         index={4}
         title="Employ Prince George's"
-        description="Provide Workforce Development IT Training for populations within Prince George's County to include youth, returning citizens, and senior citizens for the purpose of upskilling, reskilling, and career transitioning."
+        description="Ey3 provides Workforce Development IT Training for populations within Prince George's County to include youth, returning citizens, and senior citizens for the purpose of upskilling, reskilling, and career transitioning."
         model={{
           type: 'phone',
           alt: 'EPG Homepage',

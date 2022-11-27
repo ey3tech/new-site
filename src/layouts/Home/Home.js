@@ -78,7 +78,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Fearless"
-        description="Ey3 Technologies provided reliable sub-contract services to organizations within the DoD, including Fearless."
+        description="Ey3 provides reliable sub-contract services to include systems engineering and technical assistance."
         model={{
           type: 'laptop',
           alt: 'Fearless Homepage',

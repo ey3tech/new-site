@@ -158,7 +158,7 @@ export const Navbar = () => {
             <RouterLink href={pathname} scroll={false} key={label}>
               <a
                 data-navbar-item
-                className={styles.navLink}
+                className={`${styles.navLink} umami--click--nav-${label}`}
                 aria-current={getCurrent(pathname)}
                 onClick={handleNavItemClick}
               >
@@ -175,7 +175,7 @@ export const Navbar = () => {
             {navLinks.map(({ label, pathname }, index) => (
               <RouterLink href={pathname} scroll={false} key={label}>
                 <a
-                  className={styles.mobileNavLink}
+                  className={`${styles.mobileNavLink} umami--click--nav-${label}`}
                   data-visible={visible}
                   aria-current={getCurrent(pathname)}
                   onClick={handleMobileNavClick}
@@ -205,7 +205,7 @@ const NavbarIcons = ({ desktop }) => (
       <a
         key={label}
         data-navbar-item={desktop || undefined}
-        className={styles.navIconLink}
+        className={`${styles.navIconLink} umami--click--${label}-navbar`}
         aria-label={label}
         href={url}
         target="_blank"

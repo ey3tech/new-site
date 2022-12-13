@@ -11,7 +11,7 @@ export default function Document() {
         <script
           async
           defer
-          data-website-id="f28f85d7-7954-4be1-9d50-807ef0a5d1e4"
+          data-website-id="c71ee12c-e80b-4101-bdfb-8d4b14e7c59e"
           data-do-not-track="true"
           data-domains="ey3tech.vercel.app,ey3.tech"
           src="https://magic.thrzl.xyz/umami.js"

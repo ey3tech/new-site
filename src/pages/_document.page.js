@@ -13,7 +13,6 @@ export default function Document() {
           defer
           data-website-id="c71ee12c-e80b-4101-bdfb-8d4b14e7c59e"
           data-do-not-track="true"
-          data-domains="ey3tech.vercel.app,ey3.tech"
           src="https://magic.thrzl.xyz/umami.js"
         ></script>
         <link rel="manifest" href="/manifest.json" />

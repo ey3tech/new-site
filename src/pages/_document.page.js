@@ -12,9 +12,9 @@ export default function Document() {
           async
           defer
           data-website-id="c71ee12c-e80b-4101-bdfb-8d4b14e7c59e"
+          data-do-not-track="true"
           src="https://magic.thrzl.xyz/umami.js"
         ></script>
-
         <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/icon-256.png" />

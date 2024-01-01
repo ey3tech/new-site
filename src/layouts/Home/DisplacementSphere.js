@@ -97,7 +97,10 @@ export const DisplacementSphere = props => {
   }, []);
 
   useEffect(() => {
-    const dirLight = new DirectionalLight(new Color(...rgbToThreeColor("17 154 201")), 0.6);
+    const dirLight = new DirectionalLight(
+      new Color(...rgbToThreeColor('17 154 201')),
+      0.6
+    );
     const ambientLight = new AmbientLight(
       new Color(...rgbToThreeColor('17 154 201')),
       themeId === 'light' ? 0.8 : 0.1

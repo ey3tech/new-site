@@ -31,7 +31,8 @@ import { List, ListItem } from 'components/List';
 import { Link } from 'components/Link';
 
 const title = 'Community Outreach';
-const description = "We are a community-focused company - so much so, that we ensured that it was included in our core values and tenets of Ey3.  We believe it our duty to utilize our knowledge and expertise in technology to impact the communities in which we work, we live, and we care.";
+const description =
+  'We are a community-focused company - so much so, that we ensured that it was included in our core values and tenets of Ey3.  We believe it our duty to utilize our knowledge and expertise in technology to impact the communities in which we work, we live, and we care.';
 const roles = ['Mentorship', 'Internship', 'Partnership'];
 
 export const Community = () => {
@@ -54,13 +55,28 @@ export const Community = () => {
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
-              <ProjectSectionHeading style={{textTransform: "uppercase"}}><DecoderText delay={0} text={"Why we care"}/></ProjectSectionHeading>
+              <ProjectSectionHeading style={{ textTransform: 'uppercase' }}>
+                <DecoderText delay={0} text={'Why we care'} />
+              </ProjectSectionHeading>
               <ProjectSectionText>
-                At Ey3 we work hard to impact the communities where we work, where we live, and where we care. This is why we work closely with several programs covering communities in Baltimore, Prince George&apos;s County, and the District of Columbia.  Some of the amazing organizations we work with and support are:<br/>
+                At Ey3 we work hard to impact the communities where we work, where we
+                live, and where we care. This is why we work closely with several programs
+                covering communities in Baltimore, Prince George&apos;s County, and the
+                District of Columbia. Some of the amazing organizations we work with and
+                support are:
+                <br />
                 <List>
-                  <ListItem><Link href="https://www.employpg.org/youth/keys/">KEYS</Link></ListItem>
-                  <ListItem><Link href="https://www.onrampstocareers.org/">OnRamps</Link></ListItem>
-                  <ListItem><Link href="https://2ndchanceuniversity.org/">2nd Chance University</Link></ListItem>
+                  <ListItem>
+                    <Link href="https://www.employpg.org/youth/keys/">KEYS</Link>
+                  </ListItem>
+                  <ListItem>
+                    <Link href="https://www.onrampstocareers.org/">OnRamps</Link>
+                  </ListItem>
+                  <ListItem>
+                    <Link href="https://2ndchanceuniversity.org/">
+                      2nd Chance University
+                    </Link>
+                  </ListItem>
                 </List>
               </ProjectSectionText>
             </div>
@@ -78,9 +94,13 @@ export const Community = () => {
         <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading style={{ textTransform: "uppercase" }}><DecoderText delay={0} text={"Mentorship"} /></ProjectSectionHeading>
+              <ProjectSectionHeading style={{ textTransform: 'uppercase' }}>
+                <DecoderText delay={0} text={'Mentorship'} />
+              </ProjectSectionHeading>
               <ProjectSectionText>
-              Providing career and life guidance to individuals starting and navigating new careers in Tech, as well as helping to provide easier pathways to knowledge and networks of individuals that can help them.
+                Providing career and life guidance to individuals starting and navigating
+                new careers in Tech, as well as helping to provide easier pathways to
+                knowledge and networks of individuals that can help them.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -94,19 +114,25 @@ export const Community = () => {
         <ProjectSection padding="top">
           <ProjectSectionContent className={styles.grid}>
             <div>
-                <Image
-                  srcSet={[communityInternship]}
-                  placeholder={sliceBackgroundBarPlaceholder}
-                  alt=""
-                  role="presentation"
-                  sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
-                />
+              <Image
+                srcSet={[communityInternship]}
+                placeholder={sliceBackgroundBarPlaceholder}
+                alt=""
+                role="presentation"
+                sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
+              />
             </div>
             <div className={styles.gridText}>
-              <ProjectSectionHeading style={{ textTransform: "uppercase" }}><DecoderText delay={0} text={"Internship"} /></ProjectSectionHeading>
+              <ProjectSectionHeading style={{ textTransform: 'uppercase' }}>
+                <DecoderText delay={0} text={'Internship'} />
+              </ProjectSectionHeading>
               <ProjectSectionText>
-                Providing opportunities for individuals within our communities to springboard into a career of their choice, ranging in topics from Cyber Threat Intelligence and Cyber Policy, to Social Media and Graphic Design. 
-                We work closely with the <Link href="https://www.employpg.org/youth/keys/">PGC Keys</Link> program to provide internships to young people in Prince George&apos;s County.
+                Providing opportunities for individuals within our communities to
+                springboard into a career of their choice, ranging in topics from Cyber
+                Threat Intelligence and Cyber Policy, to Social Media and Graphic Design.
+                We work closely with the{' '}
+                <Link href="https://www.employpg.org/youth/keys/">PGC Keys</Link> program
+                to provide internships to young people in Prince George&apos;s County.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -114,9 +140,13 @@ export const Community = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading style={{ textTransform: "uppercase" }}><DecoderText delay={0} text={"Partnership"} /></ProjectSectionHeading>
+              <ProjectSectionHeading style={{ textTransform: 'uppercase' }}>
+                <DecoderText delay={0} text={'Partnership'} />
+              </ProjectSectionHeading>
               <ProjectSectionText>
-              It takes a village - which is why we partner with other organizations that are doing work in the areas of workforce development, re-entry, and career up & re-skilling.
+                It takes a village - which is why we partner with other organizations that
+                are doing work in the areas of workforce development, re-entry, and career
+                up & re-skilling.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image

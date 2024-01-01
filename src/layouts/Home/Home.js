@@ -12,7 +12,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ["Innovation", 'Imagination', "Insight", "Initiative"];
+const disciplines = ['Innovation', 'Imagination', 'Insight', 'Initiative'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -25,7 +25,14 @@ export const Home = () => {
   const community = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, community];
+    const sections = [
+      intro,
+      projectOne,
+      projectTwo,
+      projectThree,
+      projectFour,
+      community,
+    ];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {

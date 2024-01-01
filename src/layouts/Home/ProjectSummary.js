@@ -43,7 +43,11 @@ export const ProjectSummary = ({
           collapseDelay={1000}
           color={color}
         />
-        <span className={styles.indexNumber} data-visible={visible} style={{color: color}}>
+        <span
+          className={styles.indexNumber}
+          data-visible={visible}
+          style={{ color: color }}
+        >
           {indexText}
         </span>
       </div>
@@ -53,7 +57,7 @@ export const ProjectSummary = ({
         className={styles.title}
         data-visible={visible}
         id={titleId}
-        style={{textTransform: "uppercase", letterSpacing: "0.3em"}}
+        style={{ textTransform: 'uppercase', letterSpacing: '0.3em' }}
       >
         <DecoderText text={title} delay={1000} start={sectionVisible || focused} />
       </Heading>

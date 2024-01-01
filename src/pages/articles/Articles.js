@@ -33,7 +33,7 @@ const ArticlesPost = ({
   useEffect(() => {
     setDateTime(formatDate(date));
   }, [date, dateTime]);
-  
+
   const handleMouseEnter = () => {
     setHovered(true);
   };
@@ -70,8 +70,8 @@ const ArticlesPost = ({
         scroll={false}
         className={styles.postLink}
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>
-
+        onMouseLeave={handleMouseLeave}
+      >
         <div className={styles.postDetails}>
           <div aria-hidden className={styles.postDate}>
             <Divider notchWidth="64px" notchHeight="8px" />
@@ -92,7 +92,6 @@ const ArticlesPost = ({
             </Text>
           </div>
         </div>
-
       </RouterLink>
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">

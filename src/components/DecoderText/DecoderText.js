@@ -36,7 +36,6 @@ function shuffle(content, output, position) {
   });
 }
 
-
 export const DecoderText = memo(
   ({ text, start = true, delay: startDelay = 0, className, ...rest }) => {
     const output = useRef([{ type: CharType.Glyph, value: '' }]);

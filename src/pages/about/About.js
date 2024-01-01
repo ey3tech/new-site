@@ -71,12 +71,12 @@ export const About = () => {
               <ProjectSectionHeading>Who We Are</ProjectSectionHeading>
               <ProjectSectionText>
                 Simply put, we are a talent-driven and character-rich organization that
-                loves helping and serving people. Evident in our individual service spanning
-                5 separate DoD/IC agencies, 4 different Federal agencies, companies ranging
-                from Fortune 500&apos;s to local small businesses, and supporting numerous
-                community-based programs from DC to Prince George&apos;s County to Baltimore - we
-                live and breathe support and service.
-
+                loves helping and serving people. Evident in our individual service
+                spanning 5 separate DoD/IC agencies, 4 different Federal agencies,
+                companies ranging from Fortune 500&apos;s to local small businesses, and
+                supporting numerous community-based programs from DC to Prince
+                George&apos;s County to Baltimore - we live and breathe support and
+                service.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -95,12 +95,15 @@ export const About = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>What We Do</ProjectSectionHeading>
               <ProjectSectionText>
-              We solve issues at the root instead of the surface, by focusing
-              on the need versus the problem.  The Ey3 Process is simple - We <b>listen</b> 
-              to our customers like they&apos;re our favorite song. We <b>identify</b> the things that
-               keep our customers up at night and/or prevent them from going to happy hours, kid&apos;s 
-               games/recitals, and taking the time off. We <b>solve</b>  the issues based on the 
-               needs, to prevent repeat problems. Repeat.
+                We solve issues at the root instead of the surface, by focusing on the
+                need versus the problem. The Ey3 Process is simple - We <b>listen</b>
+                to our customers like they&apos;re our favorite song. We <b>
+                  identify
+                </b>{' '}
+                the things that keep our customers up at night and/or prevent them from
+                going to happy hours, kid&apos;s games/recitals, and taking the time off.
+                We <b>solve</b> the issues based on the needs, to prevent repeat problems.
+                Repeat.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -158,14 +161,18 @@ export const About = () => {
                   <List>
                     <ListItem>
                       Providing research involving web3 technologies and Machine Learning.
-                      We are constantly evaluating modern applications and
-                      technologies to provide to our clients.
+                      We are constantly evaluating modern applications and technologies to
+                      provide to our clients.
                     </ListItem>
                     <ListItem>
-                      Performing research and development to provide expertise and knowledge
-                      within the PGCPS system for our next generation of engineers.
+                      Performing research and development to provide expertise and
+                      knowledge within the PGCPS system for our next generation of
+                      engineers.
                     </ListItem>
-                    <ListItem>Analyze how emerging and present technologies can be applied to create better, more performant, more secure systems.</ListItem>
+                    <ListItem>
+                      Analyze how emerging and present technologies can be applied to
+                      create better, more performant, more secure systems.
+                    </ListItem>
                   </List>
                 </List>
               </ProjectSectionText>
@@ -181,13 +188,14 @@ export const About = () => {
                 within the PGCPS system for our next generation of engineers. We&apos;ve
                 worked with the PGC Keys program and have our own mentorship and
                 internship programs to help the next generation get jobs in cyber and
-                engineering. We also provide Mentoring and Internships to multiple programs
-                spanning DC, Prince George&apos;s County, and Baltimore City assisting populations
-                with growing and advancing their careers in IT and cybersecurity specifically. We 
-                strive to provide Mentoring and Internships to multiple programs spanning DC, Prince 
-                George&apos;s County, and Baltimore City assisting populations (youth, underserved, 
-                returning citizens, senior citizens) with growing and advancing their careers in IT and
-                 cybersecurity specifically.
+                engineering. We also provide Mentoring and Internships to multiple
+                programs spanning DC, Prince George&apos;s County, and Baltimore City
+                assisting populations with growing and advancing their careers in IT and
+                cybersecurity specifically. We strive to provide Mentoring and Internships
+                to multiple programs spanning DC, Prince George&apos;s County, and
+                Baltimore City assisting populations (youth, underserved, returning
+                citizens, senior citizens) with growing and advancing their careers in IT
+                and cybersecurity specifically.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image

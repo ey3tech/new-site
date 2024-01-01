@@ -268,5 +268,9 @@
   }
 }
 
-.model-link { transition: all .2s ease-in-out; }
-.model-link:hover { transform: scale(1.5); }
+.model-link {
+  transition: all 0.2s ease-in-out;
+}
+.model-link:hover {
+  transform: scale(1.5);
+}

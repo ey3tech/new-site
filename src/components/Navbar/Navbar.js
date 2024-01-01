@@ -147,27 +147,25 @@ export const Navbar = () => {
         data-navbar-item
         className={styles.logo}
         aria-label="Ey3 Technologies"
-        onClick={handleMobileNavClick}>
-
+        onClick={handleMobileNavClick}
+      >
         <Monogram highlight />
-
       </RouterLink>
       <NavToggle onClick={() => dispatch({ type: 'toggleMenu' })} menuOpen={menuOpen} />
       <nav className={styles.nav}>
         <div className={styles.navList}>
           {navLinks.map(({ label, pathname }) => (
-            (<RouterLink
+            <RouterLink
               href={pathname}
               scroll={false}
               key={label}
               data-navbar-item
               className={`${styles.navLink} umami--click--nav-${label}`}
               aria-current={getCurrent(pathname)}
-              onClick={handleNavItemClick}>
-
+              onClick={handleNavItemClick}
+            >
               {label}
-
-            </RouterLink>)
+            </RouterLink>
           ))}
         </div>
         <NavbarIcons desktop />
@@ -176,7 +174,7 @@ export const Navbar = () => {
         {visible => (
           <nav className={styles.mobileNav} data-visible={visible}>
             {navLinks.map(({ label, pathname }, index) => (
-              (<RouterLink
+              <RouterLink
                 href={pathname}
                 scroll={false}
                 key={label}
@@ -188,11 +186,10 @@ export const Navbar = () => {
                   transitionDelay: numToMs(
                     Number(msToNum(tokens.base.durationS)) + index * 50
                   ),
-                })}>
-
+                })}
+              >
                 {label}
-
-              </RouterLink>)
+              </RouterLink>
             ))}
             <NavbarIcons />
             <ThemeToggle isMobile />
@@ -215,7 +212,7 @@ const NavbarIcons = ({ desktop }) => (
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        style={{height: "min-content"}}
+        style={{ height: 'min-content' }}
       >
         <Icon className={styles.navIcon} icon={icon} />
       </a>

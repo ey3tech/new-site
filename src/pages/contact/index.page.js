@@ -61,11 +61,17 @@ const Contact = () => {
     <Section className={styles.contact}>
       <Meta
         title="Contact"
-        description="Shoot us a message if you&apos;re interested in discussing a project or if you just want to say hi 👋🏽"
+        description="Shoot us a message if you're interested in discussing a project or if you just want to say hi 👋🏽"
       />
       <Transition unmount in={!complete} timeout={1600}>
         {(visible, status) => (
-          <form className={styles.form} id="contact-form" method="POST" onSubmit={onSubmit} style={{textTransform: "uppercase"}}>
+          <form
+            className={styles.form}
+            id="contact-form"
+            method="POST"
+            onSubmit={onSubmit}
+            style={{ textTransform: 'uppercase' }}
+          >
             <Heading
               className={styles.title}
               data-status={status}
@@ -80,7 +86,11 @@ const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay, 0.4)}
             />
-            <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY}/>
+            <input
+              type="hidden"
+              name="access_key"
+              value={process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY}
+            />
             <Input
               required
               className={styles.input}

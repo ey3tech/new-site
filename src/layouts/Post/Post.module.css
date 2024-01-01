@@ -123,6 +123,7 @@
   height: 70vh;
   isolation: isolate;
   overflow: hidden;
+  z-index: -99;
 
   @media (--mediaTablet) {
     inset: 0;

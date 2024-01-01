@@ -15,18 +15,27 @@ const CharType = {
 
 function shuffle(content, output, position) {
   return content.map((value, index) => {
+    if (value === ' ') {
+      // Retain spaces
+      return { type: CharType.Space, value };
+    }
+
     if (index < position) {
+      // Retain characters before the specified position
       return { type: CharType.Value, value };
     }
 
     if (position % 1 < 0.5) {
+      // Shuffle non-space characters
       const rand = Math.floor(Math.random() * glyphs.length);
       return { type: CharType.Glyph, value: glyphs[rand] };
     }
 
+    // Use the value from the output array for non-space characters
     return { type: CharType.Glyph, value: output[index].value };
   });
 }
+
 
 export const DecoderText = memo(
   ({ text, start = true, delay: startDelay = 0, className, ...rest }) => {

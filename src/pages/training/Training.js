@@ -25,6 +25,8 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Training.module.css';
 import { DecoderText } from 'components/DecoderText';
+import { List, ListItem } from 'components/List';
+
 
 const title = 'Ey3 Workforce Development';
 const description =
@@ -55,17 +57,19 @@ export const Training = () => {
                 <DecoderText delay={0} text={'Empowering Communities'} />
               </ProjectSectionHeading>
               <ProjectSectionText>
-                At Ey3 Technologies, our heart lies in community service, demonstrated by our addition of workforce development training to our arsenal. Within a year, we&apos;ve
+                Within a year, we&apos;ve
                 trained over 40 individuals from diverse backgrounds, ages 18 to 63, in
-                Scrum, with a 100% PSM 1 certification success rate. Our commitment
-                extends beyond local impacts; we&apos;re recognized on the State of
-                Maryland&apos;s Training Provider list and have expanded our courses to
-                include Customer Service, FAA Part 107 Drone/UAS Certification, and CMMC
-                Cybersecurity. Through partnerships with local organizations and law
-                enforcement, we&apos;re dedicated to empowering every demographic with
+                Scrum, with a 100% PSM 1 certification success rate. We&apos;re dedicated to empowering every demographic with
                 career opportunities, emphasizing reskilling and upskilling to uplift the
                 entire community.
                 <br />
+                <br/>
+                This initiative reflects our core values: serving and uplifting the community.
+                In just one year, we&apos;ve proudly trained over 40 individuals across
+                various states in Scrum methodologies, achieving a remarkable 100% pass rate
+                for the PSM 1 certification. Our participants&apos; age range, spanning from
+                18 to 63 years, exemplifies our commitment to inclusivity and diversity in
+                education.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -78,14 +82,6 @@ export const Training = () => {
               />
             </div>
           </ProjectSectionColumns>
-          <ProjectSectionText style={{ paddingLeft: '5rem', paddingRight: '5rem' }}>
-            This initiative reflects our core values: serving and uplifting the community.
-            In just one year, we&apos;ve proudly trained over 40 individuals across
-            various states in Scrum methodologies, achieving a remarkable 100% pass rate
-            for the PSM 1 certification. Our participants&apos; age range, spanning from
-            18 to 63 years, exemplifies our commitment to inclusivity and diversity in
-            education.
-          </ProjectSectionText>
         </ProjectSection>
         <ProjectSection light>
           <ProjectSectionContent>
@@ -99,9 +95,13 @@ export const Training = () => {
                 Our efforts have not only earned us a place on the State of
                 Maryland&apos;s Training Provider list but also enabled us to enrich
                 Prince George&apos;s County through our partnership with Employ Prince
-                George&apos;s. We&apos;ve expanded our training portfolio to include
-                Customer Service, FAA Part 107 Drone/UAS Certification, and CMMC
-                (Cybersecurity). These additions underscore our dedication to providing
+                George&apos;s. We&apos;ve expanded our training portfolio to include:<br/>
+                <List>
+                  <ListItem>Customer Service</ListItem>
+                  <ListItem>FAA Part 107 Drone/UAS Certification</ListItem>
+                  <ListItem>CMMC Cybersecurity</ListItem>
+                </List>
+                These additions underscore our dedication to providing
                 comprehensive, cutting-edge training.
               </ProjectSectionText>
             </ProjectTextRow>
@@ -129,8 +129,6 @@ export const Training = () => {
                 <DecoderText delay={0} text={'Fostering Connections'} />
               </ProjectSectionHeading>
               <ProjectSectionText>
-                Building bridges within the community, we&apos;ve fostered new
-                partnerships with local fraternities and the PG County Police Department.
                 Our goal is clear: to open doors to potential career opportunities through
                 reskilling and upskilling. We aim to touch every demographic - from the
                 youth to seniors, career changers to returning citizens - ensuring

@@ -55,9 +55,7 @@ export const Training = () => {
                 <DecoderText delay={0} text={'Empowering Communities'} />
               </ProjectSectionHeading>
               <ProjectSectionText>
-                At Ey3 Technologies, our heart lies in community service, driving our
-                transition from Federal Government contracting to Workforce Development
-                Training in Prince George&apos;s County, MD. Within a year, we&apos;ve
+                At Ey3 Technologies, our heart lies in community service, demonstrated by our addition of workforce development training to our arsenal. Within a year, we&apos;ve
                 trained over 40 individuals from diverse backgrounds, ages 18 to 63, in
                 Scrum, with a 100% PSM 1 certification success rate. Our commitment
                 extends beyond local impacts; we&apos;re recognized on the State of

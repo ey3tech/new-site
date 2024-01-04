@@ -1,5 +1,5 @@
 import Barcode from 'assets/barcode.svg';
-import { Button } from 'components/Button';
+import { Button, isExternalLink } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Footer } from 'components/Footer';
@@ -25,6 +25,7 @@ const ArticlesPost = ({
   banner,
   timecode,
   index,
+  url
 }) => {
   const [hovered, setHovered] = useState(false);
   const [dateTime, setDateTime] = useState(null);
@@ -65,8 +66,32 @@ const ArticlesPost = ({
           />
         </div>
       )}
+      {url ? (
+        <a className={styles.postLink} href={url} target='_blank' rel='noopener noreferrer'>
+          <div className={styles.postDetails}>
+            <div aria-hidden className={styles.postDate}>
+              <Divider notchWidth="64px" notchHeight="8px" />
+              {dateTime}
+            </div>
+            <Heading as="h2" level={featured ? 2 : 4}>
+              {title}
+            </Heading>
+            <Text size={featured ? 'l' : 's'} as="p">
+              {abstract}
+            </Text>
+            <div className={styles.postFooter}>
+              <Button secondary iconHoverShift href={url} icon="chevronRight" as="div">
+                Open in New Tab
+              </Button>
+              <Text className={styles.timecode} size="s">
+                {timecode}
+              </Text>
+            </div>
+          </div>
+        </a>
+      ) :
       <RouterLink
-        href={`/articles/${slug}`}
+        href={url || `/articles/${slug}`}
         scroll={false}
         className={styles.postLink}
         onMouseEnter={handleMouseEnter}
@@ -84,15 +109,15 @@ const ArticlesPost = ({
             {abstract}
           </Text>
           <div className={styles.postFooter}>
-            <Button secondary iconHoverShift icon="chevronRight" as="div">
-              Read article
+            <Button secondary iconHoverShift href={url} icon="chevronRight" as="div">
+              {url ? "Open External" : "Read article"}
             </Button>
             <Text className={styles.timecode} size="s">
               {timecode}
             </Text>
           </div>
         </div>
-      </RouterLink>
+      </RouterLink>}
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">
           {'///'}

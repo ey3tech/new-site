@@ -11,8 +11,9 @@ export function getStaticProps() {
   const allPosts = postFilePaths.map(filePath => {
     const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
     const { data, content } = matter(source);
+    console.log(readingTime(content))
 
-    const { time } = readingTime(content);
+    const { time } = (data.timecode ? {time: (data.timecode*1000)+1} : readingTime(content));
     const timecode = formatTimecode(time);
 
     return {

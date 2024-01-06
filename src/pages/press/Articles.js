@@ -199,8 +199,8 @@ export const Articles = ({ posts, featured }) => {
   return (
     <article className={styles.articles}>
       <Meta
-        title="Articles"
-        description="A collection of technical design and development articles. May contain incoherent ramblings."
+        title="Press"
+        description="See our appearances in the media."
       />
       <Section className={styles.content}>
         {!isSingleColumn && (

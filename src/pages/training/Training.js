@@ -54,22 +54,13 @@ export const Training = () => {
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
               <ProjectSectionHeading style={{ textTransform: 'uppercase' }}>
-                <DecoderText delay={0} text={'Empowering Communities'} />
+                <DecoderText delay={0} text={'Empowering PG County'} />
               </ProjectSectionHeading>
               <ProjectSectionText>
-                Within a year, we&apos;ve
-                trained over 40 individuals from diverse backgrounds, ages 18 to 63, in
-                Scrum, with a 100% PSM 1 certification success rate. We&apos;re dedicated to empowering every demographic with
-                career opportunities, emphasizing reskilling and upskilling to uplift the
-                entire community.
+                At Ey3 Technologies, we&apos;re more than a systems engineering and cybersecurity firm; we&apos;re a beacon of empowerment in Prince George&apos;s County, MD. Initially carving our niche in Federal Government contracting, our passion for community service has guided us to a significant milestone - a year of transformative Workforce Development Training.
                 <br />
                 <br/>
-                This initiative reflects our core values: serving and uplifting the community.
-                In just one year, we&apos;ve proudly trained over 40 individuals across
-                various states in Scrum methodologies, achieving a remarkable 100% pass rate
-                for the PSM 1 certification. Our participants&apos; age range, spanning from
-                18 to 63 years, exemplifies our commitment to inclusivity and diversity in
-                education.
+                This initiative reflects our core values: serving and uplifting the community. In just one year, we&apos;ve proudly trained a diverse group of individuals across various states in Scrum methodologies, achieving a remarkable success rate in the PSM 1 certification. Our participants come from a wide spectrum of life stages and experiences, exemplifying our commitment to inclusivity and diversity in education.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -126,24 +117,12 @@ export const Training = () => {
             </div>
             <div className={styles.gridText}>
               <ProjectSectionHeading style={{ textTransform: 'uppercase' }}>
-                <DecoderText delay={0} text={'Fostering Connections'} />
+                <DecoderText delay={0} text={'Collaboration'} />
               </ProjectSectionHeading>
               <ProjectSectionText>
-                Our goal is clear: to open doors to potential career opportunities through
-                reskilling and upskilling. We aim to touch every demographic - from the
-                youth to seniors, career changers to returning citizens - ensuring
-                everyone has access to the tools they need for success in the modern
-                workforce.
-                <br />
-                <br />
-                As we continue our journey of community engagement, the bridges we&apos;ve
-                built have paved the way for promising collaborations. With a steadfast
-                commitment to our goal of creating diverse career opportunities through
-                reskilling and upskilling initiatives, we aspire to impact individuals
-                across all walks of life, spanning from the younger generation to
-                seniors,career transitioners to returning citizens. Our ongoing efforts
-                aim to ensure that every member of our community possesses the necessary
-                tools for success in today&apos;s dynamic workforce landscape.
+                Collaborating closely with local Workforce Development Groups, we&apos;re committed to building strong community networks. Our goal is clear: to open doors to potential career opportunities through reskilling and upskilling. We aim to touch every demographic - embracing everyone from the youth to seniors, career changers to returning citizens - ensuring everyone has access to the tools they need for success in the modern workforce.<br/>
+                <br/>
+                In continuation of our dedication to fostering robust community networks, we are actively engaged in collaborative efforts with local Workforce Development Groups. From empowering the youth to providing support for seniors, facilitating career transitions for individuals, and extending opportunities to returning citizens, our mission is to ensure equitable access to reskilling and upskilling resources. Together, we believe in building a future where everyone has the opportunity to pursue and achieve their career aspirations.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>

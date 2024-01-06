@@ -12,7 +12,9 @@ export function getStaticProps() {
     const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
     const { data, content } = matter(source);
 
-    const { time } = (data.timecode ? {time: (data.timecode*1000)+1} : readingTime(content));
+    const { time } = data.timecode
+      ? { time: data.timecode * 1000 + 1 }
+      : readingTime(content);
     const timecode = formatTimecode(time);
 
     return {

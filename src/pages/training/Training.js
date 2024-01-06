@@ -27,7 +27,6 @@ import styles from './Training.module.css';
 import { DecoderText } from 'components/DecoderText';
 import { List, ListItem } from 'components/List';
 
-
 const title = 'Ey3 Workforce Development';
 const description =
   "At Ey3, we've shifted from Federal Government contracting to impactful Workforce Development Training in Prince George's County, MD.";
@@ -57,10 +56,20 @@ export const Training = () => {
                 <DecoderText delay={0} text={'Empowering PG County'} />
               </ProjectSectionHeading>
               <ProjectSectionText>
-                At Ey3 Technologies, we&apos;re more than a systems engineering and cybersecurity firm; we&apos;re a beacon of empowerment in Prince George&apos;s County, MD. Initially carving our niche in Federal Government contracting, our passion for community service has guided us to a significant milestone - a year of transformative Workforce Development Training.
+                At Ey3 Technologies, we&apos;re more than a systems engineering and
+                cybersecurity firm; we&apos;re a beacon of empowerment in Prince
+                George&apos;s County, MD. Initially carving our niche in Federal
+                Government contracting, our passion for community service has guided us to
+                a significant milestone - a year of transformative Workforce Development
+                Training.
                 <br />
-                <br/>
-                This initiative reflects our core values: serving and uplifting the community. In just one year, we&apos;ve proudly trained a diverse group of individuals across various states in Scrum methodologies, achieving a remarkable success rate in the PSM 1 certification. Our participants come from a wide spectrum of life stages and experiences, exemplifying our commitment to inclusivity and diversity in education.
+                <br />
+                This initiative reflects our core values: serving and uplifting the
+                community. In just one year, we&apos;ve proudly trained a diverse group of
+                individuals across various states in Scrum methodologies, achieving a
+                remarkable success rate in the PSM 1 certification. Our participants come
+                from a wide spectrum of life stages and experiences, exemplifying our
+                commitment to inclusivity and diversity in education.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -86,14 +95,15 @@ export const Training = () => {
                 Our efforts have not only earned us a place on the State of
                 Maryland&apos;s Training Provider list but also enabled us to enrich
                 Prince George&apos;s County through our partnership with Employ Prince
-                George&apos;s. We&apos;ve expanded our training portfolio to include:<br/>
+                George&apos;s. We&apos;ve expanded our training portfolio to include:
+                <br />
                 <List>
                   <ListItem>Customer Service</ListItem>
                   <ListItem>FAA Part 107 Drone/UAS Certification</ListItem>
                   <ListItem>CMMC Cybersecurity</ListItem>
                 </List>
-                These additions underscore our dedication to providing
-                comprehensive, cutting-edge training.
+                These additions underscore our dedication to providing comprehensive,
+                cutting-edge training.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -120,9 +130,23 @@ export const Training = () => {
                 <DecoderText delay={0} text={'Collaboration'} />
               </ProjectSectionHeading>
               <ProjectSectionText>
-                Collaborating closely with local Workforce Development Groups, we&apos;re committed to building strong community networks. Our goal is clear: to open doors to potential career opportunities through reskilling and upskilling. We aim to touch every demographic - embracing everyone from the youth to seniors, career changers to returning citizens - ensuring everyone has access to the tools they need for success in the modern workforce.<br/>
-                <br/>
-                In continuation of our dedication to fostering robust community networks, we are actively engaged in collaborative efforts with local Workforce Development Groups. From empowering the youth to providing support for seniors, facilitating career transitions for individuals, and extending opportunities to returning citizens, our mission is to ensure equitable access to reskilling and upskilling resources. Together, we believe in building a future where everyone has the opportunity to pursue and achieve their career aspirations.
+                Collaborating closely with local Workforce Development Groups, we&apos;re
+                committed to building strong community networks. Our goal is clear: to
+                open doors to potential career opportunities through reskilling and
+                upskilling. We aim to touch every demographic - embracing everyone from
+                the youth to seniors, career changers to returning citizens - ensuring
+                everyone has access to the tools they need for success in the modern
+                workforce.
+                <br />
+                <br />
+                In continuation of our dedication to fostering robust community networks,
+                we are actively engaged in collaborative efforts with local Workforce
+                Development Groups. From empowering the youth to providing support for
+                seniors, facilitating career transitions for individuals, and extending
+                opportunities to returning citizens, our mission is to ensure equitable
+                access to reskilling and upskilling resources. Together, we believe in
+                building a future where everyone has the opportunity to pursue and achieve
+                their career aspirations.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>

@@ -25,7 +25,7 @@ const ArticlesPost = ({
   banner,
   timecode,
   index,
-  url
+  url,
 }) => {
   const [hovered, setHovered] = useState(false);
   const [dateTime, setDateTime] = useState(null);
@@ -67,7 +67,12 @@ const ArticlesPost = ({
         </div>
       )}
       {url ? (
-        <a className={styles.postLink} href={url} target='_blank' rel='noopener noreferrer'>
+        <a
+          className={styles.postLink}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className={styles.postDetails}>
             <div aria-hidden className={styles.postDate}>
               <Divider notchWidth="64px" notchHeight="8px" />
@@ -89,35 +94,36 @@ const ArticlesPost = ({
             </div>
           </div>
         </a>
-      ) :
-      <RouterLink
-        href={url || `/press/${slug}`}
-        scroll={false}
-        className={styles.postLink}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <div className={styles.postDetails}>
-          <div aria-hidden className={styles.postDate}>
-            <Divider notchWidth="64px" notchHeight="8px" />
-            {dateTime}
-          </div>
-          <Heading as="h2" level={featured ? 2 : 4}>
-            {title}
-          </Heading>
-          <Text size={featured ? 'l' : 's'} as="p">
-            {abstract}
-          </Text>
-          <div className={styles.postFooter}>
-            <Button secondary iconHoverShift href={url} icon="chevronRight" as="div">
-              {url ? "Open External" : "Read article"}
-            </Button>
-            <Text className={styles.timecode} size="s">
-              {timecode}
+      ) : (
+        <RouterLink
+          href={url || `/press/${slug}`}
+          scroll={false}
+          className={styles.postLink}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div className={styles.postDetails}>
+            <div aria-hidden className={styles.postDate}>
+              <Divider notchWidth="64px" notchHeight="8px" />
+              {dateTime}
+            </div>
+            <Heading as="h2" level={featured ? 2 : 4}>
+              {title}
+            </Heading>
+            <Text size={featured ? 'l' : 's'} as="p">
+              {abstract}
             </Text>
+            <div className={styles.postFooter}>
+              <Button secondary iconHoverShift href={url} icon="chevronRight" as="div">
+                {url ? 'Open External' : 'Read article'}
+              </Button>
+              <Text className={styles.timecode} size="s">
+                {timecode}
+              </Text>
+            </div>
           </div>
-        </div>
-      </RouterLink>}
+        </RouterLink>
+      )}
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">
           {'///'}
@@ -198,10 +204,7 @@ export const Articles = ({ posts, featured }) => {
 
   return (
     <article className={styles.articles}>
-      <Meta
-        title="Press"
-        description="See our appearances in the media."
-      />
+      <Meta title="Press" description="See our appearances in the media." />
       <Section className={styles.content}>
         {!isSingleColumn && (
           <div className={styles.grid}>

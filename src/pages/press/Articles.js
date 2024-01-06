@@ -91,7 +91,7 @@ const ArticlesPost = ({
         </a>
       ) :
       <RouterLink
-        href={url || `/articles/${slug}`}
+        href={url || `/media/${slug}`}
         scroll={false}
         className={styles.postLink}
         onMouseEnter={handleMouseEnter}

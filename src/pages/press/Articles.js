@@ -1,5 +1,5 @@
 import Barcode from 'assets/barcode.svg';
-import { Button, isExternalLink } from 'components/Button';
+import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Footer } from 'components/Footer';

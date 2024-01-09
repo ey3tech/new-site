@@ -164,6 +164,7 @@ export const Home = () => {
           ],
         }}
         color="#f26132"
+        buttonLink="/training"
       />
       <Profile
         sectionRef={community}

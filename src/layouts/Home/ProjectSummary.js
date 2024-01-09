@@ -10,6 +10,7 @@ import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { media } from 'utils/style';
 import styles from './ProjectSummary.module.css';
+import {Button} from 'components/Button'
 
 const Model = dynamic(() => import('components/Model').then(mod => mod.Model));
 
@@ -23,6 +24,8 @@ export const ProjectSummary = ({
   model,
   alternate,
   color,
+  buttonLink,
+  buttonText,
   ...rest
 }) => {
   const [focused, setFocused] = useState(false);
@@ -32,6 +35,7 @@ export const ProjectSummary = ({
   const indexText = index < 10 ? `0${index}` : index;
   const phoneSizes = `(max-width: ${media.tablet}px) 30vw, 20vw`;
   const laptopSizes = `(max-width: ${media.tablet}px) 80vw, 40vw`;
+  buttonText = buttonText || "Learn more"
 
   const renderDetails = visible => (
     <div className={styles.details}>
@@ -64,11 +68,12 @@ export const ProjectSummary = ({
       <Text className={styles.description} data-visible={visible} as="p">
         {description}
       </Text>
-      {/* <div className={styles.button} data-visible={visible}>
+      {buttonLink ? <div className={styles.button} data-visible={visible}>
         <Button iconHoverShift href={buttonLink} iconEnd="arrowRight">
           {buttonText}
         </Button>
-      </div> */}
+      </div> : <div style={{width:0, height:0}}>
+      </div>}
     </div>
   );
 

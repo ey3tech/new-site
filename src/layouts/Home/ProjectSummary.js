@@ -10,7 +10,7 @@ import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { media } from 'utils/style';
 import styles from './ProjectSummary.module.css';
-import {Button} from 'components/Button'
+import {Button} from 'components/Button';
 
 const Model = dynamic(() => import('components/Model').then(mod => mod.Model));
 
@@ -35,7 +35,7 @@ export const ProjectSummary = ({
   const indexText = index < 10 ? `0${index}` : index;
   const phoneSizes = `(max-width: ${media.tablet}px) 30vw, 20vw`;
   const laptopSizes = `(max-width: ${media.tablet}px) 80vw, 40vw`;
-  buttonText = buttonText || "Learn more"
+  buttonText = buttonText || "Learn more";
 
   const renderDetails = visible => (
     <div className={styles.details}>

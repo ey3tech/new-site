@@ -29,7 +29,7 @@ import { List, ListItem } from 'components/List';
 
 const title = 'Ey3 Workforce Development';
 const description =
-  "At Ey3, we've shifted from Federal Government contracting to impactful Workforce Development Training in Prince George's County, MD.";
+  "At Ey3, we've expanded our focus to include impactful workforce development training in Prince George's County, MD, in addition to our Federal Government contracting work.";
 const roles = ['Certification', 'Workforce Development', 'Community Empowerment'];
 
 export const Training = () => {

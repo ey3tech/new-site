@@ -14,6 +14,7 @@ export default function Document() {
           data-website-id="ab038c0a-e72b-4245-86b1-66a01794a834"
           data-do-not-track="true"
           src="https://magic.thrzl.xyz/umami.js"
+          data-domains="ey3.tech,www.ey3.tech"
         ></script>
         <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />

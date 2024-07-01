@@ -13,13 +13,8 @@ export const Footer = ({ className }) => (
       Created by{' '}
       <Link secondary className={styles.link} href="https://hamishw.com" target="_self">
         Hamish Williams
-      </Link>
-      . adapted by{' '}
-      <Link
-        className={styles.link}
-        style={cssProps({ linkColor: '89 102 243' })}
-        href="https://thrzl.xyz"
-      >
+      </Link>. Adapted by{' '}
+      <Link className={styles.link}  style={cssProps({ linkColor: '89 102 243' })} href="https://thrzl.xyz">
         thrzl
       </Link>
       .

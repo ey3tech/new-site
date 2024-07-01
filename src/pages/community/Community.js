@@ -1,14 +1,13 @@
-import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
 import communityInternship from 'assets/community-internship.webp';
-import sliceBackgroundLarge from 'assets/community-outreach.webp';
-import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
-import sliceBackground from 'assets/community-outreach.webp';
-import sliceIrlPlaceholder from 'assets/community-teamwork-poster.webp';
-import sliceIrl from 'assets/community-teamwork.webp';
-import communityInternPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
+import communityInternshipPlaceholder from 'assets/community-internship-placeholder.avif';
+import communityOutreach from 'assets/community-outreach.webp';
+import communityOutreachPlaceholder from 'assets/community-outreach-placeholder.avif';
+import communityTeamwork from 'assets/community-teamwork.webp';
+import communityTeamworkPlaceholder from 'assets/community-teamwork-placeholder.avif';
 import communityIntern from 'assets/community-intern.webp';
-import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
+import communityInternPlaceholder from 'assets/community-intern-placeholder.avif';
 import communityMentorship from 'assets/community-mentorship.webp';
+import communityMentorshipPlaceholder from 'assets/community-mentorship-placeholder.avif';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
@@ -41,9 +40,8 @@ export const Community = () => {
       <Meta title={title} prefix="Projects" description={description} />
       <ProjectContainer className={styles.slice}>
         <ProjectBackground
-          src={sliceBackground}
-          srcSet={`${sliceBackground.src} 1280w, ${sliceBackgroundLarge.src} 2560w`}
-          placeholder={sliceBackgroundPlaceholder}
+          src={communityOutreach}
+          placeholder={communityOutreachPlaceholder}
           opacity={0.8}
         />
         <ProjectHeader
@@ -105,7 +103,7 @@ export const Community = () => {
             </ProjectTextRow>
             <Image
               srcSet={[communityMentorship]}
-              placeholder={sliceSlidesPlaceholder}
+              placeholder={communityMentorshipPlaceholder}
               alt="two businesswomen talking to each other"
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
@@ -116,7 +114,7 @@ export const Community = () => {
             <div>
               <Image
                 srcSet={[communityInternship]}
-                placeholder={sliceBackgroundBarPlaceholder}
+                placeholder={communityInternshipPlaceholder}
                 alt=""
                 role="presentation"
                 sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
@@ -150,8 +148,8 @@ export const Community = () => {
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
-              src={sliceIrl}
-              placeholder={sliceIrlPlaceholder}
+              src={communityTeamwork}
+              placeholder={communityTeamworkPlaceholder}
               alt="Happy adult students sitting outside"
             />
           </ProjectSectionContent>

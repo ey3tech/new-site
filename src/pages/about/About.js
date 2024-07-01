@@ -1,18 +1,15 @@
-import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
-import tbjr from 'assets/about-header.webp';
-import sliceBackgroundBarLarge from 'assets/about-bar.webp';
-import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from 'assets/about-bar.webp';
-import sliceBackgroundLarge from 'assets/about-background.webp';
-import sliceBackgroundPlaceholder from 'assets/slice-background.jpg';
-import sliceBackground from 'assets/about-background.webp';
-import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
+import aboutHeader from 'assets/about-header.webp';
+import aboutHeaderPlaceholder from 'assets/about-header-placeholder.avif';
+import aboutBar from 'assets/about-bar.webp';
+import aboutBarPlaceholder from 'assets/about-bar-placeholder.avif';
+import aboutBackground from 'assets/about-background.webp';
+import aboutBackgroundPlaceholder from 'assets/about-background-placeholder.avif';
 import sliceIrl from 'assets/slice-irl.jpg';
-import office from 'assets/about-office.jpg';
-import sliceSidebarLayersPlaceholder from 'assets/slice-sidebar-layers-placeholder.png';
-import sliceSlidesLarge from 'assets/about-modem.webp';
-import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
-import sliceSlides from 'assets/about-modem.webp';
+import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
+import aboutOffice from 'assets/about-office.jpg';
+import aboutOfficePlaceholder from 'assets/about-office-placeholder.avif';
+import aboutModem from 'assets/about-modem.webp';
+import aboutModemPlaceholder from 'assets/about-modem-placeholder.avif';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
@@ -44,9 +41,8 @@ export const About = () => {
       <Meta title={title} description={description} />
       <ProjectContainer className={styles.slice}>
         <ProjectBackground
-          src={sliceBackground}
-          srcSet={`${sliceBackground.src} 1280w, ${sliceBackgroundLarge.src} 2560w`}
-          placeholder={sliceBackgroundPlaceholder}
+          src={aboutBackground}
+          placeholder={aboutBackgroundPlaceholder}
           opacity={0.8}
         />
         <ProjectHeader
@@ -58,8 +54,8 @@ export const About = () => {
         <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
-              srcSet={[tbjr, tbjr]}
-              placeholder={sliceAppPlaceholder}
+              srcSet={[aboutHeader]}
+              placeholder={aboutHeaderPlaceholder}
               alt="A picture of a girl working."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
             />
@@ -82,9 +78,9 @@ export const About = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={[office, office]}
-                placeholder={sliceSidebarLayersPlaceholder}
-                alt="The layers sidebar design, now with user profiles."
+                srcSet={[aboutOffice, aboutOffice]}
+                placeholder={aboutOfficePlaceholder}
+                alt="An office building interior."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
             </div>
@@ -107,8 +103,8 @@ export const About = () => {
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
-              srcSet={[sliceSlides, sliceSlidesLarge]}
-              placeholder={sliceSlidesPlaceholder}
+              srcSet={[aboutModem]}
+              placeholder={aboutModemPlaceholder}
               alt="The new My Slides tab in slice, showing annotated and favorited slides."
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
@@ -119,8 +115,8 @@ export const About = () => {
             <div className={styles.gridImage}>
               <div className={styles.gridBackground}>
                 <Image
-                  srcSet={[sliceBackgroundBar, sliceBackgroundBarLarge]}
-                  placeholder={sliceBackgroundBarPlaceholder}
+                  srcSet={[aboutBar]}
+                  placeholder={aboutBarPlaceholder}
                   alt=""
                   role="presentation"
                   sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}

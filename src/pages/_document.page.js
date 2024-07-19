@@ -11,10 +11,10 @@ export default function Document() {
         <script
           async
           defer
-          data-website-id="d0d2fa6b-9a8a-42e8-91bb-b6133316c031"
+          data-website-id="55cd39c3-5ed3-44d0-996b-1283d89e67c5"
           data-do-not-track="true"
           src="https://insights.ey3.tech/script.js"
-          data-domains="ey3.tech,www.ey3.tech"
+          data-domains="ey3.tech,www.ey3.tech,ey3.netlify.app"
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />

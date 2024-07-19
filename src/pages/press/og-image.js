@@ -1,5 +1,5 @@
 const chrome = require("@sparticuz/chromium");
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
 const path = require("path");
 const fs = require("fs");
 const { createHash } = require("crypto");

@@ -93,7 +93,7 @@ export const Post = ({ children, title, date, abstract, banner, timecode, ogImag
               >
                 <ArrowDown aria-hidden />
               </RouterLink>
-              <div className={styles.timecode}>{timecode}</div>
+              {timecode ? <div className={styles.timecode}>{timecode}</div> : <></>}
             </div>
           </div>
         </header>

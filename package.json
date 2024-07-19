@@ -25,6 +25,7 @@
     "stylelint-config-standard": "^25.0.0"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001642",
     "esbuild": "^0.23.0",
     "eslint": "^9.7.0",
     "eslint-config-next": "^14.2.5",

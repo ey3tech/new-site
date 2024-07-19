@@ -1,4 +1,3 @@
-import trainingBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
 import trainingConnections from 'assets/training-connections.webp';
 import trainingBackgroundLarge from 'assets/training-background.webp';
 import trainingBackgroundPlaceholder from 'assets/training-background-placeholder.webp';
@@ -119,7 +118,7 @@ export const Training = () => {
             <div>
               <Image
                 srcSet={[trainingConnections]}
-                placeholder={trainingBackgroundBarPlaceholder}
+                placeholder={trainingConnections}
                 alt=""
                 role="presentation"
                 sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}

@@ -1,13 +1,8 @@
 import communityInternship from 'assets/community-internship.webp';
-import communityInternshipPlaceholder from 'assets/community-internship-placeholder.avif';
 import communityOutreach from 'assets/community-outreach.webp';
-import communityOutreachPlaceholder from 'assets/community-outreach-placeholder.avif';
 import communityTeamwork from 'assets/community-teamwork.webp';
-import communityTeamworkPlaceholder from 'assets/community-teamwork-placeholder.avif';
 import communityIntern from 'assets/community-intern.webp';
-import communityInternPlaceholder from 'assets/community-intern-placeholder.avif';
 import communityMentorship from 'assets/community-mentorship.webp';
-import communityMentorshipPlaceholder from 'assets/community-mentorship-placeholder.avif';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
@@ -41,7 +36,7 @@ export const Community = () => {
       <ProjectContainer className={styles.slice}>
         <ProjectBackground
           src={communityOutreach}
-          placeholder={communityOutreachPlaceholder}
+          placeholder={communityOutreach}
           opacity={0.8}
         />
         <ProjectHeader
@@ -82,7 +77,7 @@ export const Community = () => {
               <Image
                 className={styles.sidebarImage}
                 srcSet={[communityIntern]}
-                placeholder={communityInternPlaceholder}
+                placeholder={communityIntern}
                 alt="happy employee"
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
@@ -103,7 +98,7 @@ export const Community = () => {
             </ProjectTextRow>
             <Image
               srcSet={[communityMentorship]}
-              placeholder={communityMentorshipPlaceholder}
+              placeholder={communityMentorship}
               alt="two businesswomen talking to each other"
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
@@ -114,7 +109,7 @@ export const Community = () => {
             <div>
               <Image
                 srcSet={[communityInternship]}
-                placeholder={communityInternshipPlaceholder}
+                placeholder={communityInternship}
                 alt=""
                 role="presentation"
                 sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
@@ -149,7 +144,7 @@ export const Community = () => {
             </ProjectTextRow>
             <Image
               src={communityTeamwork}
-              placeholder={communityTeamworkPlaceholder}
+              placeholder={communityTeamwork}
               alt="Happy adult students sitting outside"
             />
           </ProjectSectionContent>

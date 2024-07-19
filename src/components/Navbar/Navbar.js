@@ -207,7 +207,8 @@ const NavbarIcons = ({ desktop }) => (
       <a
         key={label}
         data-navbar-item={desktop || undefined}
-        className={`${styles.navIconLink} umami--click--${label}-navbar`}
+        className={`${styles.navIconLink}`}
+        data-umami-event={`${label} Button`}
         aria-label={label}
         href={url}
         target="_blank"

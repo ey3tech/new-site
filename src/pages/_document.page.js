@@ -11,11 +11,11 @@ export default function Document() {
         <script
           async
           defer
-          data-website-id="71d446a7-f751-4182-b9b4-f7567609c11f"
+          data-website-id="d0d2fa6b-9a8a-42e8-91bb-b6133316c031"
           data-do-not-track="true"
           src="https://magic.thrzl.xyz/script.js"
           data-domains="ey3.tech,www.ey3.tech"
-        ></script>
+        />
         <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/icon-256.png" />

@@ -1,9 +1,7 @@
 import aboutHeader from 'assets/about-header.webp';
 import aboutHeaderPlaceholder from 'assets/about-header-placeholder.avif';
 import aboutBar from 'assets/about-bar.webp';
-import aboutBarPlaceholder from 'assets/about-bar-placeholder.avif';
 import aboutBackground from 'assets/about-background.webp';
-import aboutBackgroundPlaceholder from 'assets/about-background-placeholder.avif';
 import sliceIrl from 'assets/slice-irl.jpg';
 import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
 import aboutOffice from 'assets/about-office.jpg';
@@ -42,7 +40,7 @@ export const About = () => {
       <ProjectContainer className={styles.slice}>
         <ProjectBackground
           src={aboutBackground}
-          placeholder={aboutBackgroundPlaceholder}
+          placeholder={aboutBackground}
           opacity={0.8}
         />
         <ProjectHeader
@@ -116,7 +114,7 @@ export const About = () => {
               <div className={styles.gridBackground}>
                 <Image
                   srcSet={[aboutBar]}
-                  placeholder={aboutBarPlaceholder}
+                  placeholder={aboutBar}
                   alt=""
                   role="presentation"
                   sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}

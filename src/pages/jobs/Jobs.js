@@ -160,7 +160,6 @@ export const Jobs = ({ posts, featured }) => {
       {posts.map(({ slug, ...post }, index) => (
         <ArticlesPost key={slug} slug={slug} index={index} {...post} />
       ))}
-      {console.log(3-(posts.length+1))}
       {posts.length < 3 && Array(3-(posts.length+1))
         .fill()
         .map((skeleton, index) => (

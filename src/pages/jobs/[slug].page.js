@@ -58,7 +58,6 @@ To apply for this role, please contact us [by email](mailto:tbazemore@ey3.tech?s
       return options;
     },
   });
-  console.log(code)
 
   const { time } = readingTime(matter.content);
   const timecode = formatTimecode(time);

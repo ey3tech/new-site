@@ -5,7 +5,7 @@ import readingTime from 'reading-time';
 import { JOBS_PATH, jobFilePaths } from 'utils/mdx';
 import { formatTimecode } from 'utils/timecode';
 
-export { Jobs as default } from './Jobs';
+export { Careers as default } from './Careers';
 
 export function getStaticProps() {
   const allPosts = jobFilePaths.map(filePath => {

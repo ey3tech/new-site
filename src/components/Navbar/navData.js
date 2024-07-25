@@ -17,7 +17,7 @@ export const navLinks = [
   },
   {
     label: 'Careers',
-    pathname: '/jobs',
+    pathname: '/careers',
   }
 ];
 

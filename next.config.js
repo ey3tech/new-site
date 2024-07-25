@@ -43,4 +43,14 @@ module.exports = withBundleAnalyzer({
 
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/jobs/:slug',
+        destination: '/careers/:slug', // Matched parameters can be used in the destination
+        permanent: true,
+      },
+    ]
+
+  }
 });

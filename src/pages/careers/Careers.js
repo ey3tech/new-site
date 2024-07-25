@@ -14,7 +14,7 @@ import RouterLink from 'next/link';
 import { useState, useEffect } from 'react';
 import { formatDate } from 'utils/date';
 import { cssProps } from 'utils/style';
-import styles from './Jobs.module.css';
+import styles from './Careers.module.css';
 import { classes } from 'utils/style';
 
 const ArticlesPost = ({
@@ -68,7 +68,7 @@ const ArticlesPost = ({
         </div>
       )}
       <RouterLink
-        href={url || `/jobs/${slug}`}
+        href={url || `/careers/${slug}`}
         scroll={false}
         className={styles.postLink}
         onMouseEnter={handleMouseEnter}
@@ -140,7 +140,7 @@ const SkeletonPost = ({ index }) => {
   );
 };
 
-export const Jobs = ({ posts, featured }) => {
+export const Careers = ({ posts, featured }) => {
   const { width } = useWindowSize();
   const singleColumnWidth = 1190;
   const isSingleColumn = width <= singleColumnWidth;

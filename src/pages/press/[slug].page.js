@@ -53,6 +53,15 @@ export const getStaticProps = async ({ params }) => {
     timecode,
   });
 
+  if (frontmatter.url) {
+    return {
+      props: { code, frontmatter, timecode, ogImage },
+      redirect: {
+        destination: frontmatter.url,
+        permanent: false,
+      },
+    };
+  }
   return {
     props: { code, frontmatter, timecode, ogImage },
     notFound: process.env.NODE_ENV === 'production' && frontmatter.draft,

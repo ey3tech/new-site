@@ -97,9 +97,10 @@ export const Training = () => {
                 George&apos;s. We&apos;ve expanded our training portfolio to include:
                 <br />
                 <List>
-                  <ListItem>Customer Service</ListItem>
                   <ListItem>FAA Part 107 Drone/UAS Certification</ListItem>
                   <ListItem>CMMC Cybersecurity</ListItem>
+                  <ListItem>Professional Scrum Master I (PSM1)</ListItem>
+                  <ListItem>Customer Service</ListItem>
                 </List>
                 These additions underscore our dedication to providing comprehensive,
                 cutting-edge training.

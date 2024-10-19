@@ -1,5 +1,7 @@
 import fs from 'fs';
 import path from 'path';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { Post, postMarkdown } from 'layouts/Post';
 import { bundleMDX } from 'mdx-bundler';
 import { getMDXComponent } from 'mdx-bundler/client';
@@ -15,6 +17,13 @@ import { generateOgImage } from './og-image';
 
 export default function PostPage({ frontmatter, code, timecode, ogImage }) {
   const MDXComponent = useMemo(() => getMDXComponent(code), [code]);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (frontmatter.url) {
+      router.replace(frontmatter.url);
+    }
+  }, [frontmatter.url, router]);
 
   return (
     <Post timecode={timecode} ogImage={ogImage} {...frontmatter}>
@@ -53,15 +62,6 @@ export const getStaticProps = async ({ params }) => {
     timecode,
   });
 
-  if (frontmatter.url) {
-    return {
-      props: { code, frontmatter, timecode, ogImage },
-      redirect: {
-        destination: frontmatter.url,
-        permanent: false,
-      },
-    };
-  }
   return {
     props: { code, frontmatter, timecode, ogImage },
     notFound: process.env.NODE_ENV === 'production' && frontmatter.draft,

@@ -24,7 +24,9 @@ export function getStaticProps() {
     };
   });
 
-  const featured = allPosts.find(post => post.featured);
+  const featured = allPosts
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
+    featured.featured = true;
 
   const posts = allPosts
     .filter(post => post.slug !== featured.slug)

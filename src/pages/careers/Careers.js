@@ -52,7 +52,7 @@ const ArticlesPost = ({
     >
       {featured && (
         <Text className={styles.postLabel} size="s">
-          Featured
+          Latest
         </Text>
       )}
       {featured && !!banner && (

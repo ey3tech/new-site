@@ -53,7 +53,7 @@
   }
 
   @media (--mediaUseMotion) {
-    &[data-visible='true']::after:global {
+    &[data-visible='true']::after {
       animation-name: reveal;
     }
   }

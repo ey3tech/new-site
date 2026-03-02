@@ -9,6 +9,7 @@
     "@mapbox/rehype-prism": "^0.8.0",
     "@next/bundle-analyzer": "^16.1.6",
     "@svgr/webpack": "^6.5.1",
+    "file-loader": "^6.2.0",
     "fs-extra": "^10.1.0",
     "globby": "^13.2.2",
     "postcss": "^8.4.49",
@@ -39,9 +40,11 @@
     "three-stdlib": "^2.35.6"
   },
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "analyze": "ANALYZE=true next build --webpack",
+    "predev": "node scripts/draco.js && node scripts/generate-sitemap.js",
+    "prebuild": "node scripts/draco.js && node scripts/generate-sitemap.js",
+    "dev": "next dev",
+    "build": "next build",
+    "analyze": "ANALYZE=true next build",
     "start": "next start"
   },
   "browserslist": {

@@ -9,39 +9,28 @@ module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   trailingSlash: true,
   pageExtensions: ['page.js', 'api.js'],
-  webpack(config, { isServer }) {
-    // Run custom scripts
-    if (isServer) {
-      require('./scripts/generate-sitemap');
-      require('./scripts/draco');
-    }
-
-    // Import `svg` files as React components
-    config.module.rules.push({
-      test: /\.svg$/,
-      resourceQuery: { not: [/url/] },
-      use: [{ loader: '@svgr/webpack', options: { svgo: false } }],
-    });
-
-    // Import videos, models, hdrs, and fonts
-    config.module.rules.push({
-      test: /\.(mp4|hdr|glb|woff|woff2)$/i,
-      type: 'asset/resource',
-    });
-
-    // Force url import with `?url`
-    config.module.rules.push({
-      resourceQuery: /url/,
-      type: 'asset/resource',
-    });
-
-    // Import `.glsl` shaders
-    config.module.rules.push({
-      test: /\.glsl$/,
-      type: 'asset/source',
-    });
-
-    return config;
+  turbopack: {
+    rules: {
+      // Import `svg` files as React components
+      '*.svg': {
+        loaders: [{ loader: '@svgr/webpack', options: { svgo: false } }],
+        as: '*.js',
+      },
+      // Import `.glsl` shaders as raw strings
+      '*.glsl': {
+        loaders: [{ loader: require.resolve('./scripts/raw-loader.js') }],
+        as: '*.js',
+      },
+      // Import `.glb` and `.mp4` binary assets as static URLs
+      '*.glb': {
+        loaders: [{ loader: require.resolve('./scripts/static-url-loader.js') }],
+        as: '*.js',
+      },
+      '*.mp4': {
+        loaders: [{ loader: require.resolve('./scripts/static-url-loader.js') }],
+        as: '*.js',
+      },
+    },
   },
   async redirects() {
     return [

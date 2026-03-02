@@ -165,7 +165,7 @@
     animation-name: introTextReveal;
 
     @media (--mediaUseMotion) {
-      &::after:global {
+      &::after {
         animation-name: reveal;
       }
     }
@@ -219,9 +219,7 @@
   top: 0.05em;
 
   &[data-status='entering'] {
-    &:global {
-      animation-name: fadeIn;
-    }
+    animation-name: fadeIn;
 
     @media (--mediaUseMotion) {
       animation-name: introLine;

@@ -31,7 +31,7 @@
     }
 
     @media (--mediaUseMotion) {
-      &[data-visible='true']::before:global {
+      &[data-visible='true']::before {
         animation: reveal var(--revealDuration) var(--bezierFastoutSlowin) var(--delay);
       }
     }

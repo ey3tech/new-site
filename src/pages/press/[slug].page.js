@@ -3,8 +3,8 @@ import path from 'path';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Post, postMarkdown } from 'layouts/Post';
-import { bundleMDX } from 'mdx-bundler';
 import { getMDXComponent } from 'mdx-bundler/client';
+import { cachedBundleMDX } from 'utils/mdxCache';
 import { useMemo } from 'react';
 import readingTime from 'reading-time';
 import rehypeImgSize from 'rehype-img-size';
@@ -36,21 +36,25 @@ export const getStaticProps = async ({ params }) => {
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath, 'utf-8');
 
-  const { code, frontmatter, matter } = await bundleMDX({
+  const isProd = process.env.NODE_ENV === 'production';
+  const { code, frontmatter, matter } = await cachedBundleMDX(
     source,
-    mdxOptions(options) {
-      options.remarkPlugins = [...(options.remarkPlugins ?? [])];
-      options.rehypePlugins = [
-        ...(options.rehypePlugins ?? []),
-        rehypePrism,
-        rehypeSlug,
-        rehypeMinify,
-        [rehypeImgSize, { dir: 'public' }],
-      ];
+    {
+      mdxOptions(options) {
+        options.remarkPlugins = [...(options.remarkPlugins ?? [])];
+        options.rehypePlugins = [
+          ...(options.rehypePlugins ?? []),
+          rehypePrism,
+          rehypeSlug,
+          ...(isProd ? [rehypeMinify] : []),
+          [rehypeImgSize, { dir: 'public' }],
+        ];
 
-      return options;
+        return options;
+      },
     },
-  });
+    'press'
+  );
 
   const { time } = readingTime(matter.content);
   const timecode = formatTimecode(time);

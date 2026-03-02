@@ -29,7 +29,7 @@
     "esbuild": "^0.23.1",
     "eslint": "^9.18.0",
     "eslint-config-next": "^16.1.6",
-    "framer-motion": "^12.34.3",
+    "framer-motion": "^12.34.4",
     "mdx-bundler": "^10.0.3",
     "next": "^16.1.6",
     "puppeteer": "^22.15.0",

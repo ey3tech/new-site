@@ -2,7 +2,7 @@
   position: relative;
   opacity: 0;
 
-  &[data-loaded='true'] {
+  &[data-loaded='true']:global {
     animation: fadeIn 1s ease forwards var(--delay);
   }
 }

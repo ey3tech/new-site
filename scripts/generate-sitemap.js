@@ -43,6 +43,7 @@ async function generateSitemap() {
   const postUrls = await globby(['src/posts/**/*.mdx']);
   const posts = postUrls.map(addPost);
 
+  
   const sitemap = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map(addPage).filter(Boolean).join('\n')}
 ${posts.filter(Boolean).join('\n')}

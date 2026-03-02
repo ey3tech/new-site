@@ -181,7 +181,10 @@
   left: calc(var(--spaceL) * -1);
   padding: var(--spaceL);
   opacity: 0;
-  animation: fadeIn 0.6s var(--bezierFastoutSlowin) 1s forwards;
+
+  &:global {
+    animation: fadeIn 0.6s var(--bezierFastoutSlowin) 1s forwards;
+  }
 
   & svg {
     stroke: rgb(var(--rgbText) / 0.5);
@@ -206,7 +209,10 @@
   grid-template-columns: 60px 1fr;
   gap: 10px;
   opacity: 0;
-  animation: fadeIn 0.6s var(--bezierFastoutSlowin) 1s forwards;
+
+  &:global {
+    animation: fadeIn 0.6s var(--bezierFastoutSlowin) 1s forwards;
+  }
 
   &::before {
     content: '';
@@ -233,7 +239,10 @@
   opacity: 0;
   display: grid;
   grid-template-columns: 1fr var(--gutterWidth) var(--contentWidth) var(--gutterWidth) 1fr;
-  animation: fadeIn 1.2s var(--bezierFastoutSlowin) 1s forwards;
+
+  &:global {
+    animation: fadeIn 1.2s var(--bezierFastoutSlowin) 1s forwards;
+  }
 
   @media (--mediaTablet) {
     grid-template-columns: 100%;

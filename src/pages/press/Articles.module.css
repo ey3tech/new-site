@@ -139,7 +139,7 @@
     }
   }
 
-  &[data-featured='false'] {
+  &[data-featured='false']:global {
     opacity: 0;
     animation: fadeIn var(--durationL) ease var(--delay) forwards;
   }
@@ -183,7 +183,10 @@
 
   @media (--mediaReduceMotion) {
     transform: translateY(-50%);
-    animation: fadeIn 0.8s ease 1.6s forwards;
+
+    :global(&) {
+      animation: fadeIn 0.8s ease 1.6s forwards;
+    }
   }
 }
 
@@ -210,7 +213,10 @@
 
   @media (--mediaReduceMotion) {
     transform: translateX(50%) rotate(-90deg);
-    animation: fadeIn 0.8s ease 1.6s forwards;
+
+    :global(&) {
+      animation: fadeIn 0.8s ease 1.6s forwards;
+    }
   }
 }
 
@@ -263,7 +269,9 @@
       transform: scale3d(0, 1, 1);
 
       @media (--mediaUseMotion) {
-        animation: reveal 1.8s var(--bezierFastoutSlowin) forwards;
+        :global(&) {
+          animation: reveal 1.8s var(--bezierFastoutSlowin) forwards;
+        }
       }
     }
   }
@@ -288,7 +296,10 @@
   isolation: isolate;
   clip-path: var(--featuredPostClip);
   opacity: 0;
-  animation: fadeIn 1s var(--bezierFastoutSlowin) forwards 0.9s;
+
+  :global(&) {
+    animation: fadeIn 1s var(--bezierFastoutSlowin) forwards 0.9s;
+  }
 
   &::after {
     content: '';
@@ -325,7 +336,10 @@
 
   @nest [data-featured='true'] & {
     opacity: 0;
-    animation: fadeIn 1s var(--bezierFastoutSlowin) forwards 0.9s;
+
+    :global(&) {
+      animation: fadeIn 1s var(--bezierFastoutSlowin) forwards 0.9s;
+    }
   }
 }
 

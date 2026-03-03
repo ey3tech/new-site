@@ -295,10 +295,10 @@
       pointer-events: none;
       transform: scale3d(0, 1, 1);
 
-      @media (--mediaUseMotion) {
-        &::after {
-          animation: reveal 1.8s var(--bezierFastoutSlowin) forwards;
-        }
+    }
+    @media (--mediaUseMotion) {
+      &::after {
+        animation: reveal 1.8s var(--bezierFastoutSlowin) forwards;
       }
     }
   }

@@ -1,8 +1,18 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .model {
   position: relative;
   opacity: 0;
 
-  &[data-loaded='true']:global {
+  &[data-loaded='true'] {
     animation: fadeIn 1s ease forwards var(--delay);
   }
 }

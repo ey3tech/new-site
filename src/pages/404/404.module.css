@@ -1,3 +1,24 @@
+@keyframes reveal {
+  0% {
+    transform: scale3d(0, 1, 1);
+    transform-origin: left;
+  }
+
+  50% {
+    transform: scale3d(1, 1, 1);
+    transform-origin: left;
+  }
+
+  51% {
+    transform-origin: right;
+  }
+
+  100% {
+    transform: scale3d(0, 1, 1);
+    transform-origin: right;
+  }
+}
+
 .page {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -53,7 +74,7 @@
   }
 
   @media (--mediaUseMotion) {
-    &[data-visible='true']::after:global {
+    &[data-visible='true']::after {
       animation-name: reveal;
     }
   }

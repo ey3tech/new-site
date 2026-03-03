@@ -2,7 +2,6 @@ import { animate, useReducedMotion, useSpring } from 'framer-motion';
 import { useInViewport } from 'hooks';
 import { useFps } from 'hooks/useFps';
 import {
-  createRef,
   startTransition,
   useCallback,
   useEffect,
@@ -374,7 +373,7 @@ const Device = ({
 }) => {
   const [loadDevice, setLoadDevice] = useState();
   const reduceMotion = useReducedMotion();
-  const placeholderScreen = createRef();
+  const placeholderScreen = useRef();
 
   useEffect(() => {
     const applyScreenTexture = async (texture, node) => {

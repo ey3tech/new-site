@@ -17,9 +17,13 @@ export const Link = forwardRef(({ href, ...rest }, ref) => {
   }
 
   return (
-    <RouterLink passHref href={href} scroll={false} legacyBehavior>
-      <LinkContent ref={ref} {...rest} />
-    </RouterLink>
+    <LinkContent
+      as={RouterLink}
+      href={href}
+      scroll={false}
+      ref={ref}
+      {...rest}
+    />
   );
 });
 

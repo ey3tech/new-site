@@ -17,10 +17,10 @@ export const Divider = ({
     className={classes(styles.divider, className)}
     style={cssProps(
       {
-        lineWidth: lineWidth,
-        lineHeight: lineHeight,
-        notchWidth: notchWidth,
-        notchHeight: notchHeight,
+        lineWidth: lineWidth || "100%",
+        lineHeight: lineHeight || "2px",
+        notchWidth: notchWidth || "90px",
+        notchHeight: notchHeight || "10px",
         collapseDelay: numToMs(collapseDelay),
       },
       style

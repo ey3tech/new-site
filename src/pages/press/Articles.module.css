@@ -1,5 +1,36 @@
 @custom-media --singleColumnWidth (max-width: 1190px);
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    transform: scale3d(0, 1, 1);
+    transform-origin: left;
+  }
+
+  50% {
+    transform: scale3d(1, 1, 1);
+    transform-origin: left;
+  }
+
+  51% {
+    transform-origin: right;
+  }
+
+  100% {
+    transform: scale3d(0, 1, 1);
+    transform-origin: right;
+  }
+}
+
 .articles {
   display: grid;
   align-items: start;
@@ -139,7 +170,7 @@
     }
   }
 
-  &[data-featured='false']:global {
+  &[data-featured='false'] {
     opacity: 0;
     animation: fadeIn var(--durationL) ease var(--delay) forwards;
   }
@@ -184,9 +215,7 @@
   @media (--mediaReduceMotion) {
     transform: translateY(-50%);
 
-    &:global {
-      animation: fadeIn 0.8s ease 1.6s forwards;
-    }
+    animation: fadeIn 0.8s ease 1.6s forwards;
   }
 }
 
@@ -214,9 +243,7 @@
   @media (--mediaReduceMotion) {
     transform: translateX(50%) rotate(-90deg);
 
-    &:global {
-      animation: fadeIn 0.8s ease 1.6s forwards;
-    }
+    animation: fadeIn 0.8s ease 1.6s forwards;
   }
 }
 
@@ -269,9 +296,7 @@
       transform: scale3d(0, 1, 1);
 
       @media (--mediaUseMotion) {
-        &:global {
-          animation: reveal 1.8s var(--bezierFastoutSlowin) forwards;
-        }
+        animation: reveal 1.8s var(--bezierFastoutSlowin) forwards;
       }
     }
   }
@@ -297,9 +322,7 @@
   clip-path: var(--featuredPostClip);
   opacity: 0;
 
-  &:global {
-    animation: fadeIn 1s var(--bezierFastoutSlowin) forwards 0.9s;
-  }
+  animation: fadeIn 1s var(--bezierFastoutSlowin) forwards 0.9s;
 
   &::after {
     content: '';
@@ -337,9 +360,7 @@
   @nest [data-featured='true'] & {
     opacity: 0;
 
-    &:global {
-      animation: fadeIn 1s var(--bezierFastoutSlowin) forwards 0.9s;
-    }
+    animation: fadeIn 1s var(--bezierFastoutSlowin) forwards 0.9s;
   }
 }
 

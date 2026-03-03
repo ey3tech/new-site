@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { bundleMDX } = require('mdx-bundler');
+const matter = require('gray-matter');
 
 function addPage(page) {
   const path = page
@@ -18,9 +18,9 @@ function addPage(page) {
   </url>`;
 }
 
-async function addPost(post) {
+function addPost(post) {
   const source = fs.readFileSync(post, 'utf-8');
-  const { frontmatter } = await bundleMDX({ source });
+  const { data: frontmatter } = matter(source);
 
   if (process.env.NODE_ENV === 'production' && frontmatter.draft) return;
 
@@ -41,8 +41,9 @@ async function generateSitemap() {
     '!src/pages/api',
   ]);
   const postUrls = await globby(['src/posts/**/*.mdx']);
-  const posts = await Promise.all(postUrls.map(addPost));
+  const posts = postUrls.map(addPost);
 
+  
   const sitemap = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map(addPage).filter(Boolean).join('\n')}
 ${posts.filter(Boolean).join('\n')}

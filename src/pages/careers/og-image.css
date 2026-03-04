@@ -1,25 +1,17 @@
 @font-face {
-  font-family: Gotham;
-  font-weight: 400;
-  src: url('../../assets/fonts/gotham-book.woff2') format('woff2');
+  font-family: Satoshi;
+  font-weight: 300 900;
+  src: url('../../assets/fonts/Satoshi-Variable.woff2') format('woff2-variations');
   font-display: block;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Gotham;
-  font-weight: 500;
-  src: url('../../assets/fonts/gotham-medium.woff2') format('woff2');
+  font-family: Satoshi;
+  font-weight: 300 900;
+  src: url('../../assets/fonts/Satoshi-VariableItalic.woff2') format('woff2-variations');
   font-display: block;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Gotham;
-  font-weight: 700;
-  src: url('../../assets/fonts/gotham-bold.woff2') format('woff2');
-  font-display: block;
-  font-style: normal;
+  font-style: italic;
 }
 
 :root {
@@ -27,7 +19,7 @@
   --rgbText: 255 255 255;
   --rgbPrimary: 0 229 255;
 
-  font-family: Gotham, system-ui;
+  font-family: Satoshi, system-ui;
   background-color: rgb(var(--rgbBackground));
   color: rgb(var(--rgbText));
 }

@@ -1,9 +1,15 @@
-import GothamBoldItalic from 'assets/fonts/gotham-bold-italic.woff2';
-import GothamBold from 'assets/fonts/gotham-bold.woff2';
-import GothamBookItalic from 'assets/fonts/gotham-book-italic.woff2';
-import GothamBook from 'assets/fonts/gotham-book.woff2';
-import GothamMediumItalic from 'assets/fonts/gotham-medium-italic.woff2';
-import GothamMedium from 'assets/fonts/gotham-medium.woff2';
+import SatoshiVariable from 'assets/fonts/Satoshi-Variable.woff2';
+import SatoshiVariableItalic from 'assets/fonts/Satoshi-VariableItalic.woff2';
+import SatoshiLight from 'assets/fonts/Satoshi-Light.woff2';
+import SatoshiLightItalic from 'assets/fonts/Satoshi-LightItalic.woff2';
+import SatoshiRegular from 'assets/fonts/Satoshi-Regular.woff2';
+import SatoshiItalic from 'assets/fonts/Satoshi-Italic.woff2';
+import SatoshiMedium from 'assets/fonts/Satoshi-Medium.woff2';
+import SatoshiMediumItalic from 'assets/fonts/Satoshi-MediumItalic.woff2';
+import SatoshiBold from 'assets/fonts/Satoshi-Bold.woff2';
+import SatoshiBoldItalic from 'assets/fonts/Satoshi-BoldItalic.woff2';
+import SatoshiBlack from 'assets/fonts/Satoshi-Black.woff2';
+import SatoshiBlackItalic from 'assets/fonts/Satoshi-BlackItalic.woff2';
 import { useHasMounted } from 'hooks';
 import Head from 'next/head';
 import { createContext, useEffect } from 'react';
@@ -128,52 +134,108 @@ export const tokenStyles = squish(`
 `);
 
 export const fontStyles = squish(`
+  /* Variable font with static fallbacks */
   @font-face {
-    font-family: Gotham;
-    font-weight: 400;
-    src: url(${GothamBook}) format('woff2');
+    font-family: Satoshi;
+    font-weight: 300 900;
+    src: 
+      url(${SatoshiVariable}) format('woff2-variations'),
+      url(${SatoshiRegular}) format('woff2');
     font-display: block;
     font-style: normal;
   }
 
   @font-face {
-    font-family: Gotham;
-    font-weight: 400;
-    src: url(${GothamBookItalic}) format('woff2');
+    font-family: Satoshi;
+    font-weight: 300 900;
+    src: 
+      url(${SatoshiVariableItalic}) format('woff2-variations'),
+      url(${SatoshiItalic}) format('woff2');
     font-display: block;
     font-style: italic;
   }
 
-  @font-face {
-    font-family: Gotham;
-    font-weight: 500;
-    src: url(${GothamMedium}) format('woff2');
-    font-display: block;
-    font-style: normal;
-  }
+  /* Static font fallbacks for legacy browsers */
+  @supports not (font-weight: 450) {
+    @font-face {
+      font-family: Satoshi;
+      font-weight: 300;
+      src: url(${SatoshiLight}) format('woff2');
+      font-display: block;
+      font-style: normal;
+    }
 
-  @font-face {
-    font-family: Gotham;
-    font-weight: 500;
-    src: url(${GothamMediumItalic}) format('woff2');
-    font-display: block;
-    font-style: italic;
-  }
+    @font-face {
+      font-family: Satoshi;
+      font-weight: 300;
+      src: url(${SatoshiLightItalic}) format('woff2');
+      font-display: block;
+      font-style: italic;
+    }
 
-  @font-face {
-    font-family: Gotham;
-    font-weight: 700;
-    src: url(${GothamBold}) format('woff2');
-    font-display: block;
-    font-style: normal;
-  }
+    @font-face {
+      font-family: Satoshi;
+      font-weight: 400;
+      src: url(${SatoshiRegular}) format('woff2');
+      font-display: block;
+      font-style: normal;
+    }
 
-  @font-face {
-    font-family: Gotham;
-    font-weight: 700;
-    src: url(${GothamBoldItalic}) format('woff2');
-    font-display: block;
-    font-style: italic;
+    @font-face {
+      font-family: Satoshi;
+      font-weight: 400;
+      src: url(${SatoshiItalic}) format('woff2');
+      font-display: block;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: Satoshi;
+      font-weight: 500;
+      src: url(${SatoshiMedium}) format('woff2');
+      font-display: block;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: Satoshi;
+      font-weight: 500;
+      src: url(${SatoshiMediumItalic}) format('woff2');
+      font-display: block;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: Satoshi;
+      font-weight: 700;
+      src: url(${SatoshiBold}) format('woff2');
+      font-display: block;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: Satoshi;
+      font-weight: 700;
+      src: url(${SatoshiBoldItalic}) format('woff2');
+      font-display: block;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: Satoshi;
+      font-weight: 900;
+      src: url(${SatoshiBlack}) format('woff2');
+      font-display: block;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: Satoshi;
+      font-weight: 900;
+      src: url(${SatoshiBlackItalic}) format('woff2');
+      font-display: block;
+      font-style: italic;
+    }
   }
 
 `);

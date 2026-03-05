@@ -1,5 +1,5 @@
-import GothamBook from 'assets/fonts/gotham-book.woff2';
-import GothamMedium from 'assets/fonts/gotham-medium.woff2';
+import SatoshiVariable from 'assets/fonts/Satoshi-Variable.woff2';
+import SatoshiVariableItalic from 'assets/fonts/Satoshi-VariableItalic.woff2';
 import { fontStyles, tokenStyles } from 'components/ThemeProvider';
 import { Head, Html, Main, NextScript } from 'next/document';
 
@@ -21,8 +21,8 @@ export default function Document() {
         <link rel="apple-touch-icon" href="/icon-256.png" />
         <link type="text/plain" rel="author" href="/humans.txt" />
 
-        <link rel="preload" href={GothamMedium} as="font" crossOrigin="true" />
-        <link rel="preload" href={GothamBook} as="font" crossOrigin="true" />
+        <link rel="preload" href={SatoshiVariable} as="font" crossOrigin="true" />
+        <link rel="preload" href={SatoshiVariableItalic} as="font" crossOrigin="true" />
         <style dangerouslySetInnerHTML={{ __html: fontStyles }} />
         <style dangerouslySetInnerHTML={{ __html: tokenStyles }} />
       </Head>

@@ -24,15 +24,19 @@ export function getStaticProps() {
     };
   });
 
-  const featured = allPosts
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
-    featured.featured = true;
+  const jobs = [...allPosts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 
-  const posts = allPosts
-    .filter(post => post.slug !== featured.slug)
-    .sort((a, b) => {
-      return new Date(a.date).getTime() - new Date(b.date).getTime();
-    })
+  if (jobs.length === 0) {
+    throw new Error('No careers found in src/careers; cannot build the index page.');
+  }
+
+  const [latest, ...rest] = jobs;
+  const featured = { ...latest, featured: true };
+
+  const posts = rest
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .reverse();
 
   return {

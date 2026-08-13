@@ -32,7 +32,7 @@
     "framer-motion": "^12.34.4",
     "mdx-bundler": "^10.0.3",
     "next": "^16.1.6",
-    "puppeteer": "^22.15.0",
+    "puppeteer": "^25.6.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "sharp": "^0.33.5",
@@ -45,7 +45,8 @@
     "dev": "next dev",
     "build": "next build",
     "analyze": "ANALYZE=true next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "node --test src/utils/__tests__/*.test.js"
   },
   "browserslist": {
     "production": [

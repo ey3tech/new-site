@@ -18,6 +18,10 @@ export const navLinks = [
   {
     label: 'Careers',
     pathname: '/careers',
+  },
+  {
+    label: 'Community',
+    pathname: '/community',
   }
 ];
 
